@@ -106,7 +106,7 @@ export default function RootLayout({
         />
       </head>
       {/* No inline style — theme background is handled purely via CSS */}
-      <body className="noise-overlay">
+      <body className="noise-overlay overflow-x-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
