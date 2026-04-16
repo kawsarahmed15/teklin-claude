@@ -1,15 +1,120 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   TEKLIN DESIGN SYSTEM — Tailwind v4 CSS-first configuration
+   ============================================================ */
+
+@theme {
+  /* --- Base Dark Theme Colors --- */
+  --color-bg-primary: #09090B;
+  --color-bg-secondary: #18181B;
+  --color-bg-tertiary: #27272A;
+  --color-border-subtle: #3F3F46;
+
+  /* --- Text Colors --- */
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #A1A1AA;
+  --color-text-tertiary: #71717A;
+
+  /* --- Accent Colors --- */
+  --color-accent-primary: #8B5CF6;
+  --color-accent-secondary: #06B6D4;
+  --color-accent-glow: oklch(62% 0.2 280 / 8%);
+
+  /* --- CTA Colors --- */
+  --color-cta-primary: #10B981;
+  --color-cta-hover: #059669;
+  --color-cta-secondary: #F97316;
+
+  /* --- Semantic Colors --- */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* --- Font Families --- */
+  --font-display: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* --- Animation Easings --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+
+  /* --- shadcn/ui token bridge --- */
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 263 80% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 263 80% 60%;
+  --radius: 0.5rem;
+  --chart-1: 263 80% 60%;
+  --chart-2: 190 80% 43%;
+  --chart-3: 160 60% 40%;
+  --chart-4: 30 80% 53%;
+  --chart-5: 0 80% 55%;
+  --sidebar: 240 10% 3.9%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 263 80% 60%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 0 0% 98%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 263 80% 60%;
+}
+
+/* Light theme overrides */
+.light {
+  --background: 0 0% 98%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 263 80% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 263 80% 55%;
+  --sidebar: 0 0% 98%;
+  --sidebar-foreground: 240 10% 3.9%;
+  --sidebar-primary: 263 80% 55%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 240 5.9% 90%;
+  --sidebar-ring: 263 80% 55%;
+}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-sans: var(--font-display);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -43,88 +148,574 @@
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-:root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+/* ============================================================
+   GLOBAL BASE STYLES
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* Smooth theme transitions on background and text */
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+/* But don't slow down Motion/GSAP-controlled elements */
+[style*="transform"],
+[style*="opacity"],
+canvas { transition: none !important; }
+
+html { scroll-behavior: auto; -webkit-text-size-adjust: 100%; }
+
+body {
+  /* Default: dark mode. Overridden by html.light body in the light-mode block below. */
+  background-color: #09090B;
+  color: #FAFAFA;
+  font-family: "Inter Variable", "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
-  }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #09090B; }
+::-webkit-scrollbar-thumb { background: #3F3F46; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #8B5CF6; }
+.light ::-webkit-scrollbar-track { background: #FAFAFA; }
+.light ::-webkit-scrollbar-thumb { background: #D4D4D8; }
+
+::selection { background-color: rgba(139, 92, 246, 0.3); color: #FAFAFA; }
+
+:focus-visible { outline: 2px solid #8B5CF6; outline-offset: 3px; border-radius: 4px; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+.text-hero {
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 700;
 }
+.text-display {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.text-h1 { font-size: clamp(2rem, 3vw, 3rem); line-height: 1.2; letter-spacing: -0.02em; }
+.text-h2 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); line-height: 1.25; letter-spacing: -0.01em; }
+.text-h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.3; }
+
+/* ============================================================
+   GRADIENT UTILITIES
+   ============================================================ */
+
+.gradient-text {
+  background: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  border: 1px solid transparent;
+  background: linear-gradient(#09090B, #09090B) padding-box,
+              linear-gradient(135deg, #8B5CF6, #06B6D4) border-box;
+}
+.light .gradient-border {
+  background: linear-gradient(#FAFAFA, #FAFAFA) padding-box,
+              linear-gradient(135deg, #8B5CF6, #06B6D4) border-box;
+}
+
+.gradient-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.4), rgba(6, 182, 212, 0.4), transparent);
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+
+.section-padding { padding-top: 120px; padding-bottom: 120px; }
+@media (max-width: 1024px) { .section-padding { padding-top: 80px; padding-bottom: 80px; } }
+@media (max-width: 768px) { .section-padding { padding-top: 60px; padding-bottom: 60px; } }
+
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1024px) { .bento-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .bento-grid { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   CARD STYLES
+   ============================================================ */
+
+.card-dark {
+  background-color: #18181B;
+  border: 1px solid #3F3F46;
+  border-radius: 16px;
+  padding: 32px;
+  transition: border-color 300ms ease, transform 300ms ease, box-shadow 300ms ease;
+}
+.card-dark:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.1);
+}
+.light .card-dark {
+  background-color: #FFFFFF;
+  border-color: #E4E4E7;
+}
+.light .card-dark:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.08);
+}
+
+/* ============================================================
+   GLASS MORPHISM
+   ============================================================ */
+
+.glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(9, 9, 11, 0.85);
+  border-bottom: 1px solid rgba(63, 63, 70, 0.5);
+}
+.light .glass {
+  background-color: rgba(250, 250, 250, 0.9);
+  border-bottom: 1px solid rgba(228, 228, 231, 0.8);
+}
+
+/* ============================================================
+   BUTTON STYLES
+   ============================================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #10B981;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 14px 28px;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #FAFAFA;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 14px 28px;
+  font-size: 0.9375rem;
+  border: 1px solid rgba(250, 250, 250, 0.3);
+  transition: all 300ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background-color: rgba(250, 250, 250, 0.08);
+  border-color: rgba(250, 250, 250, 0.5);
+}
+.light .btn-secondary { color: #09090B; border-color: rgba(9, 9, 11, 0.3); }
+.light .btn-secondary:hover { background-color: rgba(9, 9, 11, 0.05); }
+
+.btn-gradient {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+  color: white;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 16px 48px;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  transition: all 300ms ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.35);
+}
+
+/* ============================================================
+   BADGE / PILL
+   ============================================================ */
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1px solid #3F3F46;
+  background-color: #18181B;
+  color: #A1A1AA;
+}
+.light .badge-pill { border-color: #E4E4E7; background-color: #F4F4F5; color: #71717A; }
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #71717A;
+}
+
+/* ============================================================
+   ANIMATED MESH GRADIENT
+   ============================================================ */
+
+@keyframes mesh-drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  33% { transform: translate(3%, -3%) rotate(120deg) scale(1.05); }
+  66% { transform: translate(-2%, 2%) rotate(240deg) scale(0.98); }
+}
+
+.mesh-gradient {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.mesh-gradient::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -20%;
+  width: 70%;
+  height: 70%;
+  background: radial-gradient(ellipse, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+  animation: mesh-drift 18s ease-in-out infinite;
+}
+.mesh-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.10) 0%, transparent 70%);
+  animation: mesh-drift 22s ease-in-out infinite reverse;
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes marquee-reverse { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+.marquee-track { animation: marquee 35s linear infinite; }
+.marquee-track-reverse { animation: marquee-reverse 35s linear infinite; }
+.marquee-track:hover, .marquee-track-reverse:hover { animation-play-state: paused; }
+
+/* ============================================================
+   TYPING CURSOR
+   ============================================================ */
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  background-color: #8B5CF6;
+  vertical-align: baseline;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  border-radius: 1px;
+}
+
+/* ============================================================
+   NOISE TEXTURE
+   ============================================================ */
+
+.noise-overlay::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+
+/* ============================================================
+   SCROLL PROGRESS BAR
+   ============================================================ */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 9998;
+  transform-origin: left;
+  background: linear-gradient(90deg, #8B5CF6, #06B6D4);
+}
+
+/* ============================================================
+   CUSTOM CURSOR
+   ============================================================ */
+
+.has-custom-cursor * { cursor: none !important; }
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.form-input {
+  width: 100%;
+  background-color: #18181B;
+  border: 1px solid #3F3F46;
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: #FAFAFA;
+  font-size: 0.9375rem;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  outline: none;
+}
+.form-input::placeholder { color: #52525B; }
+.form-input:focus { border-color: #8B5CF6; box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1); }
+.light .form-input { background-color: #FFFFFF; border-color: #E4E4E7; color: #09090B; }
+.light .form-input::placeholder { color: #A1A1AA; }
+
+/* ============================================================
+   FILTER BUTTONS
+   ============================================================ */
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 9999px;
+  border: 1px solid #3F3F46;
+  background: transparent;
+  color: #A1A1AA;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.filter-btn:hover, .filter-btn.active {
+  border-color: #8B5CF6;
+  background-color: rgba(139, 92, 246, 0.12);
+  color: #FAFAFA;
+}
+.light .filter-btn { border-color: #E4E4E7; color: #71717A; }
+.light .filter-btn:hover, .light .filter-btn.active {
+  border-color: #8B5CF6;
+  background-color: rgba(139, 92, 246, 0.08);
+  color: #09090B;
+}
+
+/* ============================================================
+   SKIP TO CONTENT
+   ============================================================ */
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 100000;
+  background: #8B5CF6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 200ms ease;
+}
+.skip-to-content:focus { top: 16px; }
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .mesh-gradient::before, .mesh-gradient::after { animation: none; }
+  .marquee-track { animation: none; }
+}
+
+/* ============================================================
+   CODE BLOCKS
+   ============================================================ */
+
+.code-block {
+  background-color: #0D0D10;
+  border: 1px solid #27272A;
+  border-radius: 12px;
+  padding: 24px;
+  overflow-x: auto;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+}
+
+/* ============================================================
+   LIGHT MODE — COMPREHENSIVE OVERRIDES
+   next-themes adds class="light" or class="dark" to <html>.
+   All section/component backgrounds are hardcoded dark hex values,
+   so we override them here via css escaping of Tailwind utility names.
+   ============================================================ */
+
+/* Body & global surfaces */
+html.light body { background-color: #FAFAFA; color: #09090B; }
+html.light ::-webkit-scrollbar-track { background: #FAFAFA; }
+html.light ::-webkit-scrollbar-thumb { background: #D4D4D8; }
+
+/* Section and main area backgrounds */
+html.light section,
+html.light footer,
+html.light main { background-color: #FAFAFA; }
+
+/* Override hardcoded dark Tailwind utility classes in light mode.
+   Lightning CSS drops escaped-bracket selectors (.bg-\[#09090B\]) with a parse
+   error, so we use CSS attribute selectors instead — brackets inside a quoted
+   string are literal characters and are perfectly valid CSS. */
+
+/* Background overrides */
+html.light [class~="bg-[#09090B]"],
+html.light [class~="bg-[#0D0D10]"] { background-color: #FAFAFA !important; }
+html.light [class~="bg-[#18181B]"] { background-color: #F4F4F5 !important; }
+html.light [class~="bg-[#27272A]"] { background-color: #E9E9EB !important; }
+html.light [class~="bg-[#3F3F46]"] { background-color: #D4D4D8 !important; }
+
+/* Border overrides */
+html.light [class~="border-[#18181B]"],
+html.light [class~="border-[#27272A]"],
+html.light [class~="border-[#3F3F46]"] { border-color: #E4E4E7 !important; }
+
+/* Text overrides — most important: white text becomes invisible on white bg */
+html.light [class~="text-[#FAFAFA]"] { color: #09090B !important; }
+html.light [class~="text-[#A1A1AA]"] { color: #52525B !important; }
+html.light [class~="text-[#71717A]"] { color: #71717A !important; }
+html.light [class~="text-[#52525B]"] { color: #71717A !important; }
+html.light [class~="text-[#27272A]"] { color: #18181B !important; }
+
+/* Stats section dividers */
+html.light [class~="lg:divide-[#18181B]"] > * + * { border-color: #E4E4E7; }
+
+/* Badge / pill chips */
+html.light .badge-pill {
+  border-color: #D4D4D8;
+  background-color: #F4F4F5;
+  color: #52525B;
+}
+
+/* Filter buttons */
+html.light .filter-btn { border-color: #D4D4D8; color: #52525B; }
+html.light .filter-btn:hover,
+html.light .filter-btn.active {
+  border-color: #8B5CF6;
+  background-color: rgba(139, 92, 246, 0.08);
+  color: #09090B;
+}
+
+/* Code block */
+html.light .code-block {
+  background-color: #F4F4F5;
+  border-color: #E4E4E7;
+  color: #09090B;
+}
+html.light .code-block [class~="text-[#10B981]"] { color: #059669; }
+html.light .code-block [class~="text-[#A1A1AA]"] { color: #52525B; }
+
+/* Section label */
+html.light .section-label { color: #71717A; }
+
+/* Gradient divider & noise are fine as-is */
+
+/* Scroll progress — stays violet/cyan, fine in both modes */
+
+/* Hero mesh gradient is subtle enough for both modes */
+
+/* Ensure heading text inside TextReveal is readable in light mode */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4 { color: #09090B; }
+
+/* Paragraphs that inherit from section are fine; explicit text-[#A1A1AA]
+   is already overridden above. */
+
+/* gradient-text stays violet-cyan — readable on both dark and light */
+
+/* Sticky filter bar (work page) */
+html.light .sticky { background-color: #FAFAFA; border-color: #E4E4E7; }
+
+/* Card hover accent */
+html.light .card-dark:hover {
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.06);
+}
+
+/* Form inputs */
+html.light .form-input {
+  background-color: #FFFFFF;
+  border-color: #D4D4D8;
+  color: #09090B;
+}
+html.light .form-input::placeholder { color: #A1A1AA; }
+html.light .form-input:focus { border-color: #8B5CF6; }
+
+/* Select in light mode */
+html.light select.form-input option { background-color: #FFFFFF; color: #09090B; }
+
+/* Gradient text stays legible on white */
+html.light .gradient-text { opacity: 1; }
+
+/* Terminal code bg override handled by .code-block above */
+
+/* Structural text fallbacks: catch any unstyled text nodes in light mode */
+html.light p:not([class*="gradient-text"]):not([class*="text-[#8B5CF6]"]):not([class*="text-[#06B6D4]"]):not([class*="text-[#10B981]"]) {
+  color: #3F3F46;
+}
+html.light li { color: #3F3F46; }
+
+/* Prose in blog posts */
+html.light .prose { color: #3F3F46; }
+html.light .prose h2,
+html.light .prose h3 { color: #09090B; }
+

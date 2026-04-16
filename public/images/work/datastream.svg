@@ -1,0 +1,329 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E0A"/>
+      <stop offset="100%" stop-color="#060C08"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="greenBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="220" height="675" fill="#0A120C"/>
+  <line x1="220" y1="0" x2="220" y2="675" stroke="#142018" stroke-width="1"/>
+
+  <!-- Logo -->
+  <rect x="20" y="18" width="30" height="30" rx="6" fill="#10B98120" stroke="#10B98140" stroke-width="1"/>
+  <text x="35" y="38" font-family="monospace" font-size="12" font-weight="700" fill="#10B981" text-anchor="middle">DS</text>
+  <text x="62" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="white">DataStream</text>
+  <text x="62" y="44" font-family="sans-serif" font-size="9" fill="#2D5040">Analytics Platform</text>
+
+  <!-- Nav -->
+  <rect x="10" y="64" width="200" height="32" rx="6" fill="#10B98112"/>
+  <text x="32" y="84" font-family="sans-serif" font-size="11" fill="#10B981" font-weight="500">⬡  Overview</text>
+  <text x="32" y="112" font-family="sans-serif" font-size="11" fill="#3D6050">◻  Pipelines</text>
+  <text x="32" y="136" font-family="sans-serif" font-size="11" fill="#3D6050">◻  Queries</text>
+  <text x="32" y="160" font-family="sans-serif" font-size="11" fill="#3D6050">◻  Dashboards</text>
+  <text x="32" y="184" font-family="sans-serif" font-size="11" fill="#3D6050">◻  Alerts</text>
+  <text x="32" y="208" font-family="sans-serif" font-size="11" fill="#3D6050">◻  Sources</text>
+  <text x="32" y="232" font-family="sans-serif" font-size="11" fill="#3D6050">◻  Settings</text>
+
+  <!-- Pipeline status -->
+  <text x="18" y="266" font-family="sans-serif" font-size="9" font-weight="600" fill="#2D5040" letter-spacing="1">LIVE PIPELINES</text>
+  <rect x="10" y="272" width="200" height="40" rx="6" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <circle cx="24" cy="292" r="5" fill="#10B981"/>
+  <text x="34" y="288" font-family="monospace" font-size="10" fill="#FAFAFA">events.ingest</text>
+  <text x="34" y="302" font-family="sans-serif" font-size="9" fill="#3D6050">4.2M msg/s · healthy</text>
+  <text x="190" y="296" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="end">●</text>
+
+  <rect x="10" y="318" width="200" height="40" rx="6" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <circle cx="24" cy="338" r="5" fill="#10B981"/>
+  <text x="34" y="334" font-family="monospace" font-size="10" fill="#FAFAFA">user.clickstream</text>
+  <text x="34" y="348" font-family="sans-serif" font-size="9" fill="#3D6050">1.8M msg/s · healthy</text>
+  <text x="190" y="342" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="end">●</text>
+
+  <rect x="10" y="364" width="200" height="40" rx="6" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <circle cx="24" cy="384" r="5" fill="#F59E0B"/>
+  <text x="34" y="380" font-family="monospace" font-size="10" fill="#FAFAFA">ml.predictions</text>
+  <text x="34" y="394" font-family="sans-serif" font-size="9" fill="#3D6050">820K msg/s · lag 2s</text>
+  <text x="190" y="388" font-family="sans-serif" font-size="9" fill="#F59E0B" text-anchor="end">●</text>
+
+  <rect x="10" y="410" width="200" height="40" rx="6" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <circle cx="24" cy="430" r="5" fill="#10B981"/>
+  <text x="34" y="426" font-family="monospace" font-size="10" fill="#FAFAFA">txn.processor</text>
+  <text x="34" y="440" font-family="sans-serif" font-size="9" fill="#3D6050">2.1M msg/s · healthy</text>
+  <text x="190" y="434" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="end">●</text>
+
+  <!-- User -->
+  <rect x="10" y="626" width="200" height="36" rx="8" fill="#0E1A10"/>
+  <circle cx="34" cy="644" r="12" fill="#10B98130"/>
+  <text x="34" y="648" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle" font-weight="700">PN</text>
+  <text x="56" y="641" font-family="sans-serif" font-size="11" fill="#FAFAFA">Priya Nair</text>
+  <text x="56" y="654" font-family="sans-serif" font-size="9" fill="#3D6050">Head of Product</text>
+
+  <!-- Top bar -->
+  <rect x="220" y="0" width="980" height="54" fill="#0A120C"/>
+  <line x1="220" y1="54" x2="1200" y2="54" stroke="#142018" stroke-width="1"/>
+  <text x="248" y="28" font-family="sans-serif" font-size="17" font-weight="700" fill="#FAFAFA">Analytics Overview</text>
+  <text x="248" y="44" font-family="sans-serif" font-size="11" fill="#2D5040">Real-time · 50M+ events/day · Sub-second queries</text>
+
+  <!-- Time range -->
+  <rect x="820" y="13" width="130" height="28" rx="6" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="885" y="31" font-family="sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">Last 24 hours ▾</text>
+  <rect x="962" y="13" width="90" height="28" rx="6" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="1007" y="31" font-family="sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">Live ●</text>
+  <rect x="1064" y="13" width="120" height="28" rx="6" fill="url(#greenBtn)"/>
+  <text x="1124" y="31" font-family="sans-serif" font-size="11" fill="white" font-weight="600" text-anchor="middle">Run Query</text>
+
+  <!-- Stat cards row -->
+  <rect x="238" y="66" width="185" height="86" rx="10" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="258" y="89" font-family="sans-serif" font-size="10" fill="#3D6050">Events / Day</text>
+  <text x="258" y="114" font-family="sans-serif" font-size="24" font-weight="700" fill="#FAFAFA">50.2<tspan font-size="14" fill="#52525B">M</tspan></text>
+  <rect x="258" y="128" width="74" height="14" rx="3" fill="#10B98115"/>
+  <text x="295" y="138" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">↑ 12% WoW</text>
+
+  <rect x="435" y="66" width="185" height="86" rx="10" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="455" y="89" font-family="sans-serif" font-size="10" fill="#3D6050">Query Latency</text>
+  <text x="455" y="114" font-family="sans-serif" font-size="24" font-weight="700" fill="#10B981">0.4<tspan font-size="14" fill="#52525B">ms</tspan></text>
+  <rect x="455" y="128" width="80" height="14" rx="3" fill="#10B98115"/>
+  <text x="495" y="138" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">p99 &lt; 1ms</text>
+
+  <rect x="632" y="66" width="185" height="86" rx="10" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="652" y="89" font-family="sans-serif" font-size="10" fill="#3D6050">Throughput</text>
+  <text x="652" y="114" font-family="sans-serif" font-size="24" font-weight="700" fill="#FAFAFA">8.9<tspan font-size="14" fill="#52525B">M/s</tspan></text>
+  <rect x="652" y="128" width="70" height="14" rx="3" fill="#10B98115"/>
+  <text x="687" y="138" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">Peak: 12M/s</text>
+
+  <rect x="829" y="66" width="185" height="86" rx="10" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="849" y="89" font-family="sans-serif" font-size="10" fill="#3D6050">Uptime</text>
+  <text x="849" y="114" font-family="sans-serif" font-size="24" font-weight="700" fill="#10B981">99.98<tspan font-size="14">%</tspan></text>
+  <rect x="849" y="128" width="82" height="14" rx="3" fill="#10B98115"/>
+  <text x="890" y="138" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">SLA: 99.9%</text>
+
+  <rect x="1026" y="66" width="148" height="86" rx="10" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="1046" y="89" font-family="sans-serif" font-size="10" fill="#3D6050">Error Rate</text>
+  <text x="1046" y="114" font-family="sans-serif" font-size="24" font-weight="700" fill="#FAFAFA">0.02<tspan font-size="14" fill="#52525B">%</tspan></text>
+  <rect x="1046" y="128" width="66" height="14" rx="3" fill="#10B98115"/>
+  <text x="1079" y="138" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">↓ vs target</text>
+
+  <!-- Main event chart -->
+  <rect x="238" y="166" width="630" height="210" rx="12" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="258" y="190" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Event Throughput</text>
+  <text x="258" y="204" font-family="sans-serif" font-size="10" fill="#3D6050">Events per second across all pipelines</text>
+  <!-- Tabs -->
+  <rect x="640" y="178" width="40" height="20" rx="4" fill="#10B98120"/>
+  <text x="660" y="192" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle">1H</text>
+  <text x="700" y="192" font-family="sans-serif" font-size="9" fill="#3D6050">6H</text>
+  <text x="728" y="192" font-family="sans-serif" font-size="9" fill="#3D6050">24H</text>
+  <text x="756" y="192" font-family="sans-serif" font-size="9" fill="#3D6050">7D</text>
+
+  <!-- Grid -->
+  <line x1="252" y1="218" x2="860" y2="218" stroke="#142018" stroke-width="0.5"/>
+  <line x1="252" y1="243" x2="860" y2="243" stroke="#142018" stroke-width="0.5"/>
+  <line x1="252" y1="268" x2="860" y2="268" stroke="#142018" stroke-width="0.5"/>
+  <line x1="252" y1="293" x2="860" y2="293" stroke="#142018" stroke-width="0.5"/>
+  <line x1="252" y1="318" x2="860" y2="318" stroke="#142018" stroke-width="0.5"/>
+  <line x1="252" y1="343" x2="860" y2="343" stroke="#142018" stroke-width="0.5"/>
+  <!-- Y labels -->
+  <text x="248" y="222" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">12M</text>
+  <text x="248" y="247" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">10M</text>
+  <text x="248" y="272" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">8M</text>
+  <text x="248" y="297" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">6M</text>
+  <text x="248" y="322" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">4M</text>
+  <text x="248" y="347" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">2M</text>
+
+  <!-- Area chart fill (green) -->
+  <polygon points="256,340 296,335 336,325 376,310 416,318 456,300 496,285 536,295 576,270 616,258 656,265 696,245 736,238 776,250 816,232 856,240 860,360 256,360" fill="url(#greenGrad)"/>
+  <!-- Line -->
+  <polyline points="256,340 296,335 336,325 376,310 416,318 456,300 496,285 536,295 576,270 616,258 656,265 696,245 736,238 776,250 816,232 856,240" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Cyan overlay line (second metric) -->
+  <polyline points="256,355 296,350 336,345 376,338 416,342 456,330 496,320 536,328 576,308 616,298 656,304 696,285 736,280 776,290 816,272 856,278" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6,3"/>
+
+  <!-- Spike annotation -->
+  <rect x="612" y="228" width="84" height="34" rx="5" fill="#1A2A1A" stroke="#10B98130" stroke-width="1"/>
+  <text x="654" y="241" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle">Peak: 11.4M/s</text>
+  <text x="654" y="254" font-family="sans-serif" font-size="8" fill="#52525B" text-anchor="middle">14:32 · auto-scaled</text>
+  <line x1="654" y1="262" x2="654" y2="265" stroke="#10B98150" stroke-width="1"/>
+  <circle cx="654" cy="265" r="3" fill="#10B981"/>
+
+  <!-- Legend -->
+  <line x1="258" y1="372" x2="278" y2="372" stroke="#10B981" stroke-width="2"/>
+  <text x="284" y="376" font-family="sans-serif" font-size="10" fill="#71717A">Total events/s</text>
+  <line x1="390" y1="372" x2="410" y2="372" stroke="#06B6D4" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="416" y="376" font-family="sans-serif" font-size="10" fill="#71717A">Processed/s</text>
+
+  <!-- Right panel: Latency heatmap -->
+  <rect x="880" y="166" width="294" height="210" rx="12" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="900" y="190" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Query Latency</text>
+  <text x="900" y="204" font-family="sans-serif" font-size="9" fill="#3D6050">p50 / p95 / p99 distribution</text>
+
+  <!-- Bar chart for latency percentiles -->
+  <!-- Hours on x axis -->
+  <text x="906" y="360" font-family="monospace" font-size="8" fill="#2D5040">00</text>
+  <text x="936" y="360" font-family="monospace" font-size="8" fill="#2D5040">04</text>
+  <text x="966" y="360" font-family="monospace" font-size="8" fill="#2D5040">08</text>
+  <text x="996" y="360" font-family="monospace" font-size="8" fill="#2D5040">12</text>
+  <text x="1026" y="360" font-family="monospace" font-size="8" fill="#2D5040">16</text>
+  <text x="1056" y="360" font-family="monospace" font-size="8" fill="#2D5040">20</text>
+  <text x="1086" y="360" font-family="monospace" font-size="8" fill="#2D5040">24</text>
+
+  <!-- p99 bars -->
+  <rect x="904" y="290" width="16" height="58" rx="2" fill="#10B98125"/>
+  <rect x="904" y="296" width="16" height="52" rx="2" fill="#10B98140"/>
+  <rect x="904" y="306" width="16" height="42" rx="2" fill="#10B981"/>
+
+  <rect x="934" y="285" width="16" height="63" rx="2" fill="#10B98125"/>
+  <rect x="934" y="294" width="16" height="54" rx="2" fill="#10B98140"/>
+  <rect x="934" y="302" width="16" height="46" rx="2" fill="#10B981"/>
+
+  <rect x="964" y="276" width="16" height="72" rx="2" fill="#10B98125"/>
+  <rect x="964" y="286" width="16" height="62" rx="2" fill="#10B98140"/>
+  <rect x="964" y="295" width="16" height="53" rx="2" fill="#10B981"/>
+
+  <rect x="994" y="280" width="16" height="68" rx="2" fill="#10B98125"/>
+  <rect x="994" y="289" width="16" height="59" rx="2" fill="#10B98140"/>
+  <rect x="994" y="298" width="16" height="50" rx="2" fill="#10B981"/>
+
+  <rect x="1024" y="268" width="16" height="80" rx="2" fill="#F59E0B25"/>
+  <rect x="1024" y="280" width="16" height="68" rx="2" fill="#F59E0B40"/>
+  <rect x="1024" y="290" width="16" height="58" rx="2" fill="#F59E0B"/>
+
+  <rect x="1054" y="272" width="16" height="76" rx="2" fill="#10B98125"/>
+  <rect x="1054" y="282" width="16" height="66" rx="2" fill="#10B98140"/>
+  <rect x="1054" y="292" width="16" height="56" rx="2" fill="#10B981"/>
+
+  <rect x="1084" y="284" width="16" height="64" rx="2" fill="#10B98125"/>
+  <rect x="1084" y="293" width="16" height="55" rx="2" fill="#10B98140"/>
+  <rect x="1084" y="302" width="16" height="46" rx="2" fill="#10B981"/>
+
+  <!-- Axis line -->
+  <line x1="900" y1="350" x2="1160" y2="350" stroke="#142018" stroke-width="1"/>
+  <!-- Y labels -->
+  <text x="897" y="320" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">1ms</text>
+  <text x="897" y="295" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">2ms</text>
+  <text x="897" y="270" font-family="monospace" font-size="8" fill="#2D5040" text-anchor="end">3ms</text>
+  <!-- Legend -->
+  <rect x="904" y="368" width="8" height="8" rx="1" fill="#10B981"/>
+  <text x="916" y="376" font-family="sans-serif" font-size="9" fill="#71717A">p50</text>
+  <rect x="944" y="368" width="8" height="8" rx="1" fill="#10B98160"/>
+  <text x="956" y="376" font-family="sans-serif" font-size="9" fill="#71717A">p95</text>
+  <rect x="984" y="368" width="8" height="8" rx="1" fill="#F59E0B"/>
+  <text x="996" y="376" font-family="sans-serif" font-size="9" fill="#71717A">p99 spike</text>
+
+  <!-- Bottom: SQL terminal -->
+  <rect x="238" y="390" width="630" height="260" rx="12" fill="#060E08" stroke="#142018" stroke-width="1"/>
+  <!-- Terminal top bar -->
+  <rect x="238" y="390" width="630" height="36" rx="12" fill="#0A160C"/>
+  <rect x="238" y="408" width="630" height="18" fill="#0A160C"/>
+  <circle cx="260" cy="408" r="6" fill="#EF4444"/>
+  <circle cx="278" cy="408" r="6" fill="#F59E0B"/>
+  <circle cx="296" cy="408" r="6" fill="#10B981"/>
+  <text x="420" y="412" font-family="monospace" font-size="10" fill="#3D6050" text-anchor="middle">query editor · ClickHouse</text>
+  <rect x="786" y="398" width="70" height="20" rx="4" fill="#10B98120"/>
+  <text x="821" y="412" font-family="monospace" font-size="10" fill="#10B981" text-anchor="middle">▶ Run</text>
+
+  <!-- SQL content -->
+  <text x="258" y="446" font-family="monospace" font-size="11" fill="#3D6050">-- Real-time event aggregation query</text>
+  <text x="258" y="464" font-family="monospace" font-size="11" fill="#06B6D4">SELECT</text>
+  <text x="310" y="464" font-family="monospace" font-size="11" fill="#FAFAFA">  toStartOfMinute(event_time) </text>
+  <text x="258" y="482" font-family="monospace" font-size="11" fill="#FAFAFA">       AS minute,</text>
+  <text x="258" y="500" font-family="monospace" font-size="11" fill="#FAFAFA">       pipeline_name,</text>
+  <text x="258" y="518" font-family="monospace" font-size="11" fill="#10B981">       count</text>
+  <text x="335" y="518" font-family="monospace" font-size="11" fill="#FAFAFA">(*) AS events,</text>
+  <text x="258" y="536" font-family="monospace" font-size="11" fill="#10B981">       avg</text>
+  <text x="320" y="536" font-family="monospace" font-size="11" fill="#FAFAFA">(processing_ms) AS avg_latency</text>
+  <text x="258" y="554" font-family="monospace" font-size="11" fill="#06B6D4">FROM</text>
+  <text x="300" y="554" font-family="monospace" font-size="11" fill="#F59E0B"> events_stream</text>
+  <text x="258" y="572" font-family="monospace" font-size="11" fill="#06B6D4">WHERE</text>
+  <text x="310" y="572" font-family="monospace" font-size="11" fill="#FAFAFA"> event_time &gt;= </text>
+  <text x="436" y="572" font-family="monospace" font-size="11" fill="#10B981">now()</text>
+  <text x="476" y="572" font-family="monospace" font-size="11" fill="#FAFAFA"> - INTERVAL </text>
+  <text x="568" y="572" font-family="monospace" font-size="11" fill="#F59E0B">1</text>
+  <text x="578" y="572" font-family="monospace" font-size="11" fill="#06B6D4"> HOUR</text>
+  <text x="258" y="590" font-family="monospace" font-size="11" fill="#06B6D4">GROUP BY</text>
+  <text x="330" y="590" font-family="monospace" font-size="11" fill="#FAFAFA"> minute, pipeline_name</text>
+  <text x="258" y="608" font-family="monospace" font-size="11" fill="#06B6D4">ORDER BY</text>
+  <text x="330" y="608" font-family="monospace" font-size="11" fill="#FAFAFA"> minute </text>
+  <text x="378" y="608" font-family="monospace" font-size="11" fill="#06B6D4">DESC</text>
+  <text x="258" y="626" font-family="monospace" font-size="11" fill="#3D6050">-- 50,241,876 rows returned in 0.41ms ✓</text>
+  <!-- Cursor -->
+  <rect x="522" y="618" width="8" height="12" rx="1" fill="#10B981" opacity="0.8"/>
+
+  <!-- Bottom right: Cluster status -->
+  <rect x="880" y="390" width="294" height="260" rx="12" fill="#0E1A10" stroke="#142018" stroke-width="1"/>
+  <text x="900" y="414" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Cluster Health</text>
+  <rect x="1090" y="402" width="68" height="20" rx="4" fill="#10B98120"/>
+  <text x="1124" y="416" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">All healthy</text>
+
+  <!-- Node grid -->
+  <text x="900" y="440" font-family="sans-serif" font-size="10" fill="#3D6050">Kubernetes nodes · 12 active</text>
+
+  <!-- Node blocks -->
+  <rect x="898" y="448" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="924" y="464" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-01</text>
+  <text x="924" y="478" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 42%</text>
+
+  <rect x="958" y="448" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="984" y="464" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-02</text>
+  <text x="984" y="478" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 38%</text>
+
+  <rect x="1018" y="448" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="1044" y="464" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-03</text>
+  <text x="1044" y="478" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 61%</text>
+
+  <rect x="1078" y="448" width="52" height="40" rx="6" fill="#0A160C" stroke="#F59E0B40" stroke-width="1"/>
+  <text x="1104" y="464" font-family="monospace" font-size="9" fill="#F59E0B" text-anchor="middle">node-04</text>
+  <text x="1104" y="478" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 87%</text>
+
+  <rect x="898" y="496" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="924" y="512" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-05</text>
+  <text x="924" y="526" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 45%</text>
+
+  <rect x="958" y="496" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="984" y="512" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-06</text>
+  <text x="984" y="526" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 33%</text>
+
+  <rect x="1018" y="496" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="1044" y="512" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-07</text>
+  <text x="1044" y="526" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 55%</text>
+
+  <rect x="1078" y="496" width="52" height="40" rx="6" fill="#0A160C" stroke="#10B98130" stroke-width="1"/>
+  <text x="1104" y="512" font-family="monospace" font-size="9" fill="#10B981" text-anchor="middle">node-08</text>
+  <text x="1104" y="526" font-family="sans-serif" font-size="8" fill="#3D6050" text-anchor="middle">CPU 29%</text>
+
+  <!-- Resource bars -->
+  <text x="900" y="558" font-family="sans-serif" font-size="10" fill="#3D6050">Cluster resources</text>
+  <text x="900" y="576" font-family="sans-serif" font-size="10" fill="#A1A1AA">CPU</text>
+  <rect x="930" y="569" width="200" height="8" rx="4" fill="#142018"/>
+  <rect x="930" y="569" width="112" height="8" rx="4" fill="#10B981"/>
+  <text x="1138" y="577" font-family="monospace" font-size="9" fill="#10B981">56%</text>
+
+  <text x="900" y="596" font-family="sans-serif" font-size="10" fill="#A1A1AA">RAM</text>
+  <rect x="930" y="589" width="200" height="8" rx="4" fill="#142018"/>
+  <rect x="930" y="589" width="148" height="8" rx="4" fill="#06B6D4"/>
+  <text x="1138" y="597" font-family="monospace" font-size="9" fill="#06B6D4">74%</text>
+
+  <text x="900" y="616" font-family="sans-serif" font-size="10" fill="#A1A1AA">Disk</text>
+  <rect x="930" y="609" width="200" height="8" rx="4" fill="#142018"/>
+  <rect x="930" y="609" width="74" height="8" rx="4" fill="#8B5CF6"/>
+  <text x="1138" y="617" font-family="monospace" font-size="9" fill="#8B5CF6">37%</text>
+
+  <text x="900" y="636" font-family="sans-serif" font-size="10" fill="#A1A1AA">Net</text>
+  <rect x="930" y="629" width="200" height="8" rx="4" fill="#142018"/>
+  <rect x="930" y="629" width="160" height="8" rx="4" fill="#F59E0B"/>
+  <text x="1138" y="637" font-family="monospace" font-size="9" fill="#F59E0B">80%</text>
+</svg>

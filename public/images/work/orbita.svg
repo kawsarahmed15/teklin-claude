@@ -1,0 +1,349 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E14"/>
+      <stop offset="100%" stop-color="#060C12"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cyanBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="230" height="675" fill="#0C1219"/>
+  <line x1="230" y1="0" x2="230" y2="675" stroke="#162030" stroke-width="1"/>
+
+  <!-- Logo -->
+  <circle cx="44" cy="36" r="16" fill="#06B6D420"/>
+  <text x="44" y="41" font-family="sans-serif" font-size="14" font-weight="700" fill="#06B6D4" text-anchor="middle">O+</text>
+  <text x="70" y="33" font-family="sans-serif" font-size="14" font-weight="700" fill="white">Orbita</text>
+  <text x="70" y="47" font-family="sans-serif" font-size="10" fill="#52525B">Health Platform</text>
+
+  <!-- Nav -->
+  <rect x="12" y="66" width="206" height="34" rx="8" fill="#06B6D415"/>
+  <circle cx="32" cy="83" r="8" fill="#06B6D430"/>
+  <text x="32" y="87" font-family="sans-serif" font-size="8" fill="#06B6D4" text-anchor="middle">⌂</text>
+  <text x="52" y="88" font-family="sans-serif" font-size="12" fill="#FAFAFA" font-weight="500">Overview</text>
+
+  <circle cx="32" cy="118" r="8" fill="none" stroke="#1E2E3E" stroke-width="1"/>
+  <text x="52" y="122" font-family="sans-serif" font-size="12" fill="#52525B">Patients</text>
+
+  <circle cx="32" cy="148" r="8" fill="none" stroke="#1E2E3E" stroke-width="1"/>
+  <text x="52" y="152" font-family="sans-serif" font-size="12" fill="#52525B">Appointments</text>
+
+  <circle cx="32" cy="178" r="8" fill="none" stroke="#1E2E3E" stroke-width="1"/>
+  <text x="52" y="182" font-family="sans-serif" font-size="12" fill="#52525B">Records</text>
+
+  <circle cx="32" cy="208" r="8" fill="none" stroke="#1E2E3E" stroke-width="1"/>
+  <text x="52" y="212" font-family="sans-serif" font-size="12" fill="#52525B">Analytics</text>
+
+  <circle cx="32" cy="238" r="8" fill="none" stroke="#1E2E3E" stroke-width="1"/>
+  <text x="52" y="242" font-family="sans-serif" font-size="12" fill="#52525B">Billing</text>
+
+  <circle cx="32" cy="268" r="8" fill="none" stroke="#1E2E3E" stroke-width="1"/>
+  <text x="52" y="272" font-family="sans-serif" font-size="12" fill="#52525B">Settings</text>
+
+  <!-- Upcoming appointments (sidebar) -->
+  <text x="20" y="310" font-family="sans-serif" font-size="10" font-weight="600" fill="#52525B" letter-spacing="1">TODAY'S QUEUE</text>
+  <rect x="12" y="318" width="206" height="52" rx="8" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <circle cx="30" cy="344" r="12" fill="#06B6D430"/>
+  <text x="30" y="348" font-family="sans-serif" font-size="9" fill="#06B6D4" text-anchor="middle" font-weight="700">AK</text>
+  <text x="50" y="338" font-family="sans-serif" font-size="11" fill="#FAFAFA" font-weight="600">Anika Kumar</text>
+  <text x="50" y="351" font-family="sans-serif" font-size="10" fill="#52525B">09:00 · General</text>
+  <rect x="170" y="334" width="38" height="16" rx="4" fill="#10B98120"/>
+  <text x="189" y="345" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle">Check-in</text>
+
+  <rect x="12" y="376" width="206" height="52" rx="8" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <circle cx="30" cy="402" r="12" fill="#8B5CF630"/>
+  <text x="30" y="406" font-family="sans-serif" font-size="9" fill="#8B5CF6" text-anchor="middle" font-weight="700">RJ</text>
+  <text x="50" y="396" font-family="sans-serif" font-size="11" fill="#FAFAFA" font-weight="600">Raj Joshi</text>
+  <text x="50" y="409" font-family="sans-serif" font-size="10" fill="#52525B">10:30 · Cardio</text>
+  <rect x="170" y="392" width="38" height="16" rx="4" fill="#F59E0B20"/>
+  <text x="189" y="403" font-family="sans-serif" font-size="9" fill="#F59E0B" text-anchor="middle">Pending</text>
+
+  <rect x="12" y="434" width="206" height="52" rx="8" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <circle cx="30" cy="460" r="12" fill="#10B98130"/>
+  <text x="30" y="464" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle" font-weight="700">SP</text>
+  <text x="50" y="454" font-family="sans-serif" font-size="11" fill="#FAFAFA" font-weight="600">Sara Patel</text>
+  <text x="50" y="467" font-family="sans-serif" font-size="10" fill="#52525B">11:00 · Paediatric</text>
+  <rect x="170" y="450" width="38" height="16" rx="4" fill="#06B6D420"/>
+  <text x="189" y="461" font-family="sans-serif" font-size="9" fill="#06B6D4" text-anchor="middle">Ready</text>
+
+  <!-- Staff -->
+  <rect x="12" y="620" width="206" height="36" rx="8" fill="#111A22"/>
+  <circle cx="36" cy="638" r="12" fill="#06B6D430"/>
+  <text x="36" y="642" font-family="sans-serif" font-size="9" fill="#06B6D4" text-anchor="middle" font-weight="700">DR</text>
+  <text x="58" y="635" font-family="sans-serif" font-size="12" fill="#FAFAFA">Dr. Reyes</text>
+  <text x="58" y="648" font-family="sans-serif" font-size="10" fill="#52525B">Cardiologist</text>
+
+  <!-- Top bar -->
+  <rect x="230" y="0" width="970" height="54" fill="#0C1219"/>
+  <line x1="230" y1="54" x2="1200" y2="54" stroke="#162030" stroke-width="1"/>
+  <text x="258" y="30" font-family="sans-serif" font-size="17" font-weight="700" fill="#FAFAFA">Patient Overview</text>
+  <text x="258" y="46" font-family="sans-serif" font-size="11" fill="#3F5060">Wednesday, 17 Apr 2024 · All Departments</text>
+  <rect x="870" y="14" width="26" height="26" rx="6" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="883" y="31" font-family="sans-serif" font-size="14" fill="#52525B" text-anchor="middle">🔔</text>
+  <circle cx="896" cy="14" r="5" fill="#EF4444"/>
+  <rect x="908" y="14" width="26" height="26" rx="6" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="921" y="31" font-family="sans-serif" font-size="12" fill="#52525B" text-anchor="middle">⚙</text>
+  <rect x="944" y="10" width="120" height="34" rx="8" fill="url(#cyanBtn)"/>
+  <text x="1004" y="31" font-family="sans-serif" font-size="12" fill="white" font-weight="600" text-anchor="middle">+ New Patient</text>
+  <rect x="1076" y="10" width="110" height="34" rx="8" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="1131" y="31" font-family="sans-serif" font-size="12" fill="#A1A1AA" text-anchor="middle">Export Report</text>
+
+  <!-- Stat cards -->
+  <rect x="248" y="70" width="175" height="88" rx="10" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="268" y="93" font-family="sans-serif" font-size="10" fill="#52525B">Patients Today</text>
+  <text x="268" y="118" font-family="sans-serif" font-size="26" font-weight="700" fill="#FAFAFA">48</text>
+  <rect x="268" y="132" width="64" height="16" rx="4" fill="#10B98115"/>
+  <text x="300" y="143" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">↑ vs yesterday</text>
+
+  <rect x="435" y="70" width="175" height="88" rx="10" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="455" y="93" font-family="sans-serif" font-size="10" fill="#52525B">Avg Wait Time</text>
+  <text x="455" y="118" font-family="sans-serif" font-size="26" font-weight="700" fill="#06B6D4">6.2<tspan font-size="14" fill="#52525B"> min</tspan></text>
+  <rect x="455" y="132" width="72" height="16" rx="4" fill="#10B98115"/>
+  <text x="491" y="143" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">↓ 60% faster</text>
+
+  <rect x="622" y="70" width="175" height="88" rx="10" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="642" y="93" font-family="sans-serif" font-size="10" fill="#52525B">Beds Available</text>
+  <text x="642" y="118" font-family="sans-serif" font-size="26" font-weight="700" fill="#FAFAFA">24<tspan font-size="14" fill="#52525B">/40</tspan></text>
+  <rect x="642" y="132" width="50" height="16" rx="4" fill="#F59E0B15"/>
+  <text x="667" y="143" font-family="sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle">60% full</text>
+
+  <rect x="809" y="70" width="175" height="88" rx="10" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="829" y="93" font-family="sans-serif" font-size="10" fill="#52525B">Critical Alerts</text>
+  <text x="829" y="118" font-family="sans-serif" font-size="26" font-weight="700" fill="#EF4444">3</text>
+  <rect x="829" y="132" width="76" height="16" rx="4" fill="#EF444415"/>
+  <text x="867" y="143" font-family="sans-serif" font-size="10" fill="#EF4444" text-anchor="middle">Needs review</text>
+
+  <rect x="996" y="70" width="175" height="88" rx="10" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="1016" y="93" font-family="sans-serif" font-size="10" fill="#52525B">Satisfaction</text>
+  <text x="1016" y="118" font-family="sans-serif" font-size="26" font-weight="700" fill="#10B981">94<tspan font-size="14">%</tspan></text>
+  <rect x="1016" y="132" width="58" height="16" rx="4" fill="#10B98115"/>
+  <text x="1045" y="143" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">↑ 2.3%</text>
+
+  <!-- Appointments calendar -->
+  <rect x="248" y="170" width="500" height="230" rx="12" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="268" y="194" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Appointment Schedule</text>
+  <text x="660" y="194" font-family="sans-serif" font-size="11" fill="#52525B">April 2024</text>
+  <rect x="680" y="182" width="24" height="20" rx="4" fill="#162030"/>
+  <text x="692" y="196" font-family="sans-serif" font-size="12" fill="#52525B" text-anchor="middle">‹</text>
+  <rect x="708" y="182" width="24" height="20" rx="4" fill="#162030"/>
+  <text x="720" y="196" font-family="sans-serif" font-size="12" fill="#52525B" text-anchor="middle">›</text>
+
+  <!-- Day headers -->
+  <text x="268" y="216" font-family="sans-serif" font-size="10" fill="#52525B">MON</text>
+  <text x="338" y="216" font-family="sans-serif" font-size="10" fill="#52525B">TUE</text>
+  <text x="408" y="216" font-family="sans-serif" font-size="10" fill="#52525B">WED</text>
+  <text x="478" y="216" font-family="sans-serif" font-size="10" fill="#52525B">THU</text>
+  <text x="548" y="216" font-family="sans-serif" font-size="10" fill="#52525B">FRI</text>
+  <text x="618" y="216" font-family="sans-serif" font-size="10" fill="#52525B">SAT</text>
+  <text x="688" y="216" font-family="sans-serif" font-size="10" fill="#52525B">SUN</text>
+
+  <!-- Calendar grid line -->
+  <line x1="256" y1="220" x2="740" y2="220" stroke="#162030" stroke-width="1"/>
+
+  <!-- Time slots - hours -->
+  <text x="258" y="240" font-family="monospace" font-size="9" fill="#3F5060">09:00</text>
+  <line x1="256" y1="243" x2="740" y2="243" stroke="#162030" stroke-width="0.5"/>
+  <text x="258" y="268" font-family="monospace" font-size="9" fill="#3F5060">10:00</text>
+  <line x1="256" y1="271" x2="740" y2="271" stroke="#162030" stroke-width="0.5"/>
+  <text x="258" y="296" font-family="monospace" font-size="9" fill="#3F5060">11:00</text>
+  <line x1="256" y1="299" x2="740" y2="299" stroke="#162030" stroke-width="0.5"/>
+  <text x="258" y="324" font-family="monospace" font-size="9" fill="#3F5060">12:00</text>
+  <line x1="256" y1="327" x2="740" y2="327" stroke="#162030" stroke-width="0.5"/>
+  <text x="258" y="352" font-family="monospace" font-size="9" fill="#3F5060">13:00</text>
+  <line x1="256" y1="355" x2="740" y2="355" stroke="#162030" stroke-width="0.5"/>
+  <text x="258" y="380" font-family="monospace" font-size="9" fill="#3F5060">14:00</text>
+
+  <!-- Appointment blocks -->
+  <!-- Mon -->
+  <rect x="300" y="232" width="62" height="34" rx="4" fill="#06B6D425" stroke="#06B6D440" stroke-width="1"/>
+  <text x="308" y="244" font-family="sans-serif" font-size="9" fill="#06B6D4" font-weight="600">Anika K.</text>
+  <text x="308" y="256" font-family="sans-serif" font-size="8" fill="#52525B">General</text>
+  <rect x="300" y="284" width="62" height="34" rx="4" fill="#8B5CF625" stroke="#8B5CF640" stroke-width="1"/>
+  <text x="308" y="296" font-family="sans-serif" font-size="9" fill="#8B5CF6" font-weight="600">Tom W.</text>
+  <text x="308" y="308" font-family="sans-serif" font-size="8" fill="#52525B">Neuro</text>
+
+  <!-- Tue -->
+  <rect x="370" y="260" width="62" height="34" rx="4" fill="#10B98125" stroke="#10B98140" stroke-width="1"/>
+  <text x="378" y="272" font-family="sans-serif" font-size="9" fill="#10B981" font-weight="600">Laura M.</text>
+  <text x="378" y="284" font-family="sans-serif" font-size="8" fill="#52525B">Paediatric</text>
+  <rect x="370" y="316" width="62" height="50" rx="4" fill="#F59E0B20" stroke="#F59E0B35" stroke-width="1"/>
+  <text x="378" y="328" font-family="sans-serif" font-size="9" fill="#F59E0B" font-weight="600">D. Singh</text>
+  <text x="378" y="340" font-family="sans-serif" font-size="8" fill="#52525B">Cardiac</text>
+  <text x="378" y="352" font-family="sans-serif" font-size="8" fill="#52525B">Surgery</text>
+
+  <!-- Wed (today - highlight) -->
+  <rect x="440" y="224" width="62" height="140" rx="4" fill="#06B6D408" stroke="#06B6D420" stroke-width="1"/>
+  <rect x="440" y="232" width="62" height="34" rx="4" fill="#06B6D430" stroke="#06B6D450" stroke-width="1"/>
+  <text x="448" y="244" font-family="sans-serif" font-size="9" fill="#06B6D4" font-weight="600">Raj J.</text>
+  <text x="448" y="256" font-family="sans-serif" font-size="8" fill="#A1A1AA">Cardiology</text>
+  <rect x="440" y="272" width="62" height="28" rx="4" fill="#EF444425" stroke="#EF444440" stroke-width="1"/>
+  <text x="448" y="284" font-family="sans-serif" font-size="9" fill="#EF4444" font-weight="600">URGENT</text>
+  <text x="448" y="296" font-family="sans-serif" font-size="8" fill="#52525B">Emergency</text>
+  <rect x="440" y="308" width="62" height="34" rx="4" fill="#10B98125" stroke="#10B98140" stroke-width="1"/>
+  <text x="448" y="320" font-family="sans-serif" font-size="9" fill="#10B981" font-weight="600">Sara P.</text>
+  <text x="448" y="332" font-family="sans-serif" font-size="8" fill="#52525B">Paediatric</text>
+
+  <!-- Thu -->
+  <rect x="510" y="248" width="62" height="34" rx="4" fill="#8B5CF625" stroke="#8B5CF640" stroke-width="1"/>
+  <text x="518" y="260" font-family="sans-serif" font-size="9" fill="#8B5CF6" font-weight="600">Mark T.</text>
+  <text x="518" y="272" font-family="sans-serif" font-size="8" fill="#52525B">Neuro</text>
+  <rect x="510" y="300" width="62" height="34" rx="4" fill="#06B6D425" stroke="#06B6D440" stroke-width="1"/>
+  <text x="518" y="312" font-family="sans-serif" font-size="9" fill="#06B6D4" font-weight="600">Nina L.</text>
+  <text x="518" y="324" font-family="sans-serif" font-size="8" fill="#52525B">General</text>
+
+  <!-- Fri -->
+  <rect x="580" y="232" width="62" height="50" rx="4" fill="#F59E0B20" stroke="#F59E0B35" stroke-width="1"/>
+  <text x="588" y="244" font-family="sans-serif" font-size="9" fill="#F59E0B" font-weight="600">Ken Brown</text>
+  <text x="588" y="256" font-family="sans-serif" font-size="8" fill="#52525B">Ortho</text>
+  <text x="588" y="268" font-family="sans-serif" font-size="8" fill="#52525B">2h session</text>
+
+  <!-- Now line -->
+  <line x1="300" y1="267" x2="740" y2="267" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="256" y="261" width="38" height="12" rx="3" fill="#06B6D4"/>
+  <text x="275" y="271" font-family="monospace" font-size="8" fill="white" text-anchor="middle">NOW</text>
+
+  <!-- Patient vitals chart -->
+  <rect x="760" y="170" width="412" height="230" rx="12" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="780" y="194" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Patient Vitals — Anika Kumar</text>
+  <rect x="978" y="182" width="80" height="20" rx="4" fill="#10B98120"/>
+  <text x="1018" y="196" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">✓ Stable</text>
+  <rect x="1068" y="182" width="86" height="20" rx="4" fill="#162030"/>
+  <text x="1111" y="196" font-family="sans-serif" font-size="10" fill="#71717A" text-anchor="middle">View Records</text>
+
+  <!-- Vitals grid -->
+  <line x1="776" y1="218" x2="1164" y2="218" stroke="#162030" stroke-width="0.5"/>
+  <line x1="776" y1="248" x2="1164" y2="248" stroke="#162030" stroke-width="0.5"/>
+  <line x1="776" y1="278" x2="1164" y2="278" stroke="#162030" stroke-width="0.5"/>
+  <line x1="776" y1="308" x2="1164" y2="308" stroke="#162030" stroke-width="0.5"/>
+  <line x1="776" y1="338" x2="1164" y2="338" stroke="#162030" stroke-width="0.5"/>
+  <line x1="776" y1="368" x2="1164" y2="368" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- Heart rate line -->
+  <text x="778" y="212" font-family="sans-serif" font-size="9" fill="#52525B">Heart Rate (bpm)</text>
+  <polyline points="800,350 830,310 860,330 890,300 920,290 950,310 980,285 1010,295 1040,280 1070,290 1100,270 1130,282 1160,275" fill="none" stroke="#EF4444" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="800,350 830,310 860,330 890,300 920,290 950,310 980,285 1010,295 1040,280 1070,290 1100,270 1130,282 1160,275 1164,370 800,370" fill="#EF444415"/>
+
+  <!-- SpO2 line -->
+  <polyline points="800,248 830,244 860,246 890,243 920,242 950,245 980,241 1010,243 1040,240 1070,242 1100,238 1130,240 1160,239" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- BP line -->
+  <polyline points="800,310 830,305 860,318 890,308 920,300 950,312 980,304 1010,307 1040,298 1070,305 1100,295 1130,302 1160,296" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4,2"/>
+
+  <!-- Legend -->
+  <line x1="780" y1="388" x2="800" y2="388" stroke="#EF4444" stroke-width="2"/>
+  <text x="806" y="392" font-family="sans-serif" font-size="10" fill="#71717A">Heart Rate: 72 bpm</text>
+  <line x1="920" y1="388" x2="940" y2="388" stroke="#06B6D4" stroke-width="2"/>
+  <text x="946" y="392" font-family="sans-serif" font-size="10" fill="#71717A">SpO2: 98%</text>
+  <line x1="1040" y1="388" x2="1060" y2="388" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="1066" y="392" font-family="sans-serif" font-size="10" fill="#71717A">BP: 120/80</text>
+
+  <!-- Bottom row -->
+  <!-- Patient list -->
+  <rect x="248" y="416" width="500" height="230" rx="12" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="268" y="440" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Patient Directory</text>
+  <!-- Search -->
+  <rect x="490" y="428" width="240" height="24" rx="6" fill="#0C1219" stroke="#162030" stroke-width="1"/>
+  <text x="506" y="444" font-family="sans-serif" font-size="10" fill="#3F5060">Search patients...</text>
+  <!-- Table header -->
+  <rect x="256" y="450" width="484" height="20" rx="4" fill="#111A22"/>
+  <text x="272" y="463" font-family="sans-serif" font-size="10" fill="#52525B">Patient</text>
+  <text x="390" y="463" font-family="sans-serif" font-size="10" fill="#52525B">DOB</text>
+  <text x="460" y="463" font-family="sans-serif" font-size="10" fill="#52525B">Department</text>
+  <text x="570" y="463" font-family="sans-serif" font-size="10" fill="#52525B">Last Visit</text>
+  <text x="650" y="463" font-family="sans-serif" font-size="10" fill="#52525B">Status</text>
+
+  <!-- Rows -->
+  <circle cx="284" cy="486" r="10" fill="#06B6D430"/>
+  <text x="284" y="490" font-family="sans-serif" font-size="8" fill="#06B6D4" text-anchor="middle">AK</text>
+  <text x="304" y="483" font-family="sans-serif" font-size="11" fill="#FAFAFA">Anika Kumar</text>
+  <text x="304" y="495" font-family="sans-serif" font-size="9" fill="#52525B">F, 34</text>
+  <text x="390" y="489" font-family="sans-serif" font-size="10" fill="#A1A1AA">14 Mar 1990</text>
+  <text x="460" y="489" font-family="sans-serif" font-size="10" fill="#A1A1AA">General</text>
+  <text x="570" y="489" font-family="sans-serif" font-size="10" fill="#A1A1AA">17 Apr 2024</text>
+  <rect x="638" y="480" width="52" height="16" rx="4" fill="#10B98120"/>
+  <text x="664" y="491" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle">Active</text>
+  <line x1="264" y1="500" x2="732" y2="500" stroke="#162030" stroke-width="0.5"/>
+
+  <circle cx="284" cy="516" r="10" fill="#8B5CF630"/>
+  <text x="284" y="520" font-family="sans-serif" font-size="8" fill="#8B5CF6" text-anchor="middle">RJ</text>
+  <text x="304" y="513" font-family="sans-serif" font-size="11" fill="#FAFAFA">Raj Joshi</text>
+  <text x="304" y="525" font-family="sans-serif" font-size="9" fill="#52525B">M, 58</text>
+  <text x="390" y="519" font-family="sans-serif" font-size="10" fill="#A1A1AA">02 Jun 1966</text>
+  <text x="460" y="519" font-family="sans-serif" font-size="10" fill="#A1A1AA">Cardiology</text>
+  <text x="570" y="519" font-family="sans-serif" font-size="10" fill="#A1A1AA">17 Apr 2024</text>
+  <rect x="638" y="510" width="52" height="16" rx="4" fill="#F59E0B20"/>
+  <text x="664" y="521" font-family="sans-serif" font-size="9" fill="#F59E0B" text-anchor="middle">Review</text>
+  <line x1="264" y1="530" x2="732" y2="530" stroke="#162030" stroke-width="0.5"/>
+
+  <circle cx="284" cy="546" r="10" fill="#10B98130"/>
+  <text x="284" y="550" font-family="sans-serif" font-size="8" fill="#10B981" text-anchor="middle">SP</text>
+  <text x="304" y="543" font-family="sans-serif" font-size="11" fill="#FAFAFA">Sara Patel</text>
+  <text x="304" y="555" font-family="sans-serif" font-size="9" fill="#52525B">F, 8</text>
+  <text x="390" y="549" font-family="sans-serif" font-size="10" fill="#A1A1AA">11 Sep 2016</text>
+  <text x="460" y="549" font-family="sans-serif" font-size="10" fill="#A1A1AA">Paediatric</text>
+  <text x="570" y="549" font-family="sans-serif" font-size="10" fill="#A1A1AA">15 Apr 2024</text>
+  <rect x="638" y="540" width="52" height="16" rx="4" fill="#10B98120"/>
+  <text x="664" y="551" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle">Active</text>
+  <line x1="264" y1="560" x2="732" y2="560" stroke="#162030" stroke-width="0.5"/>
+
+  <circle cx="284" cy="576" r="10" fill="#EF444430"/>
+  <text x="284" y="580" font-family="sans-serif" font-size="8" fill="#EF4444" text-anchor="middle">TW</text>
+  <text x="304" y="573" font-family="sans-serif" font-size="11" fill="#FAFAFA">Tom Williams</text>
+  <text x="304" y="585" font-family="sans-serif" font-size="9" fill="#52525B">M, 45</text>
+  <text x="390" y="579" font-family="sans-serif" font-size="10" fill="#A1A1AA">20 Jan 1979</text>
+  <text x="460" y="579" font-family="sans-serif" font-size="10" fill="#A1A1AA">Neurology</text>
+  <text x="570" y="579" font-family="sans-serif" font-size="10" fill="#A1A1AA">10 Apr 2024</text>
+  <rect x="638" y="570" width="52" height="16" rx="4" fill="#EF444420"/>
+  <text x="664" y="581" font-family="sans-serif" font-size="9" fill="#EF4444" text-anchor="middle">Critical</text>
+  <line x1="264" y1="590" x2="732" y2="590" stroke="#162030" stroke-width="0.5"/>
+
+  <circle cx="284" cy="608" r="10" fill="#F59E0B30"/>
+  <text x="284" y="612" font-family="sans-serif" font-size="8" fill="#F59E0B" text-anchor="middle">KL</text>
+  <text x="304" y="605" font-family="sans-serif" font-size="11" fill="#FAFAFA">Kim Lee</text>
+  <text x="304" y="617" font-family="sans-serif" font-size="9" fill="#52525B">F, 62</text>
+  <text x="390" y="611" font-family="sans-serif" font-size="10" fill="#A1A1AA">30 Aug 1962</text>
+  <text x="460" y="611" font-family="sans-serif" font-size="10" fill="#A1A1AA">Orthopaedics</text>
+  <text x="570" y="611" font-family="sans-serif" font-size="10" fill="#A1A1AA">08 Apr 2024</text>
+  <rect x="638" y="602" width="52" height="16" rx="4" fill="#F59E0B20"/>
+  <text x="664" y="613" font-family="sans-serif" font-size="9" fill="#F59E0B" text-anchor="middle">Follow-up</text>
+
+  <!-- AI insights panel -->
+  <rect x="760" y="416" width="412" height="230" rx="12" fill="#0F1A24" stroke="#162030" stroke-width="1"/>
+  <text x="780" y="440" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">AI Insights</text>
+  <rect x="1060" y="428" width="96" height="20" rx="4" fill="#8B5CF620"/>
+  <text x="1108" y="442" font-family="sans-serif" font-size="10" fill="#8B5CF6" text-anchor="middle">ML-Powered</text>
+
+  <!-- Insight cards -->
+  <rect x="776" y="452" width="380" height="54" rx="8" fill="#111A22" stroke="#1A2A3A" stroke-width="1"/>
+  <rect x="784" y="462" width="4" height="34" rx="2" fill="#EF4444"/>
+  <text x="798" y="474" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">High-Risk: Tom Williams</text>
+  <text x="798" y="488" font-family="sans-serif" font-size="10" fill="#A1A1AA">Elevated cardiac markers — recommend ECG within 2h</text>
+  <text x="798" y="500" font-family="sans-serif" font-size="9" fill="#52525B">Confidence: 94% · Neurology · Room 4B</text>
+
+  <rect x="776" y="514" width="380" height="54" rx="8" fill="#111A22" stroke="#1A2A3A" stroke-width="1"/>
+  <rect x="784" y="524" width="4" height="34" rx="2" fill="#F59E0B"/>
+  <text x="798" y="536" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Appointment Optimisation</text>
+  <text x="798" y="550" font-family="sans-serif" font-size="10" fill="#A1A1AA">3 slots available 14:00–15:30 with low wait prediction</text>
+  <text x="798" y="562" font-family="sans-serif" font-size="9" fill="#52525B">Model: Slot-Optimiser v2.1 · Updated 5m ago</text>
+
+  <rect x="776" y="576" width="380" height="54" rx="8" fill="#111A22" stroke="#1A2A3A" stroke-width="1"/>
+  <rect x="784" y="586" width="4" height="34" rx="2" fill="#10B981"/>
+  <text x="798" y="598" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Wait Time Trend</text>
+  <text x="798" y="612" font-family="sans-serif" font-size="10" fill="#A1A1AA">Avg down to 6.2 min — 60% improvement since Jan</text>
+  <text x="798" y="624" font-family="sans-serif" font-size="9" fill="#52525B">Target achieved: &lt;10 min · HIPAA Compliant</text>
+</svg>

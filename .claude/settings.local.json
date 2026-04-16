@@ -3,7 +3,19 @@
     "allow": [
       "Bash(pnpm create:*)",
       "Bash(pnpm add:*)",
-      "Bash(pnpm dlx:*)"
+      "Bash(pnpm dlx:*)",
+      "Bash(pnpm build:*)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const names = Object.keys\\(l\\); console.log\\(names.filter\\(n => /git|link|twitter|x|linked/i.test\\(n\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const names = Object.keys\\(l\\); console.log\\(names.filter\\(n => /^[A-Z]/.test\\(n\\) && !n.endsWith\\('Icon'\\) && !n.startsWith\\('Lucide'\\) && \\(n.toLowerCase\\(\\).includes\\('brand'\\) || n.toLowerCase\\(\\).includes\\('social'\\) || n.toLowerCase\\(\\).includes\\('twitter'\\) || n.toLowerCase\\(\\).includes\\('linked'\\)\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(pnpm dev:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(grep -v \"^$\")",
+      "Bash(node -e \"const si = require\\('D:/Teklin/teklin-website-calude-code/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/si/index.mjs'\\); const keys = Object.keys\\(si\\); ['azure','langchain','openai','hugging','dotnet','amazon','google'].forEach\\(q => console.log\\(q+':', keys.filter\\(k=>k.toLowerCase\\(\\).includes\\(q\\)\\).join\\(', '\\)\\)\\)\")",
+      "Bash(node -e \"const si = require\\('D:/Teklin/teklin-website-calude-code/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/si/index.mjs'\\); const keys = Object.keys\\(si\\); ['microsoft','aws','amazon','azure','vercel','kubernetes'].forEach\\(q => console.log\\(q+':', keys.filter\\(k=>k.toLowerCase\\(\\).includes\\(q\\)\\).join\\(', '\\)\\)\\)\")",
+      "Bash(node -e \"const si = require\\('D:/Teklin/teklin-website-calude-code/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/si/index.mjs'\\); const keys = Object.keys\\(si\\); ['java','kotlin','swift','flutter','react','next','angular','svelte','node','python','rust','go','docker','postgres','mongo','redis','supa','tensor','pytorch','hugging'].forEach\\(q => console.log\\(q+':', keys.filter\\(k=>k.toLowerCase\\(\\).includes\\(q\\)\\).slice\\(0,4\\).join\\(', '\\)\\)\\)\")",
+      "Bash(node -e \"const si = require\\('D:/Teklin/teklin-website-calude-code/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/si/index.mjs'\\); const keys = Object.keys\\(si\\); ['cloud','aws','ec2','lambda','azure','icloud','java'].forEach\\(q => console.log\\(q+':', keys.filter\\(k=>k.toLowerCase\\(\\).includes\\(q\\)\\).slice\\(0,5\\).join\\(', '\\)\\)\\)\")",
+      "Bash(node -e \"const si = require\\('D:/Teklin/teklin-website-calude-code/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/si/index.mjs'\\); const keys = Object.keys\\(si\\); ['openjdk','corretto','spring','nextdot','typescript'].forEach\\(q => console.log\\(q+':', keys.filter\\(k=>k.toLowerCase\\(\\).includes\\(q\\)\\).slice\\(0,5\\).join\\(', '\\)\\)\\)\")",
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); ['SiCassandra','SiGithubactions','SiPrisma','SiElasticsearch','SiStripe','SiFirebase','SiTerraform','SiGraphql'].forEach\\(n => console.log\\(n, !!si[n]\\)\\)\")"
     ]
   }
 }
