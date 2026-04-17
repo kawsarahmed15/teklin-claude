@@ -100,13 +100,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <head>
         {/* JSON-LD is safe to inline in <head> as type="application/ld+json" */}
-        <script
+        <Script
+          id="json-ld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       {/* No inline style — theme background is handled purely via CSS */}
-      <body className="noise-overlay overflow-x-hidden">
+      <body className="noise-overlay overflow-x-hidden relative">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

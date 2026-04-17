@@ -2,8 +2,17 @@ export const SITE_NAME = "Teklin";
 export const SITE_URL = "https://teklin.in";
 export const SITE_DESCRIPTION =
   "Teklin is a full-spectrum software development company. We design, build, and scale digital products that users love and businesses depend on.";
-export const SITE_EMAIL = "hello@teklin.in";
+export const SITE_EMAIL = "contact@teklin.in";
 export const SITE_TWITTER = "@teklin_in";
+export const SITE_PHONE = "+91 9707276661";
+export const SITE_ADDRESS = "Kanishail, Sribhumi (Karimganj), Assam, India 788727";
+export const SITE_HOURS = "Monday–Saturday, 9:00 AM – 6:00 PM IST";
+export const SOCIAL_LINKS = {
+  facebook: "https://facebook.com/profile.php?id=61571269328546",
+  instagram: "https://instagram.com/teklin.in",
+  twitter: "https://x.com/Teklin_in",
+  linkedin: "https://linkedin.com/company/teklin/",
+};
 
 export const NAV_LINKS = [
   { label: "Services", href: "/services" },
@@ -12,6 +21,7 @@ export const NAV_LINKS = [
   { label: "Process", href: "/process" },
   { label: "Insights", href: "/insights" },
   { label: "Careers", href: "/careers" },
+  { label: "Estimate", href: "/estimate" },
 ];
 
 export const SERVICES = [
@@ -105,13 +115,25 @@ export const SERVICES = [
     featured: false,
     colSpan: 1,
   },
+  { slug: "mvp-development", title: "MVP Development", shortTitle: "MVP", description: "From founder idea to market-ready product in 6–10 weeks. Lean, validated, and built to scale.", icon: "Rocket", featured: false, colSpan: 1 },
+  { slug: "fintech-software", title: "FinTech Software", shortTitle: "FinTech", description: "Secure transaction flows, payment integrations, and role-based financial workflows.", icon: "CreditCard", featured: false, colSpan: 1 },
+  { slug: "healthcare-software", title: "Healthcare Software", shortTitle: "Healthcare", description: "Patient management, teleconsultation, scheduling, and HIPAA-conscious product architecture.", icon: "Heart", featured: false, colSpan: 1 },
+  { slug: "ecommerce-development", title: "E-commerce Development", shortTitle: "E-commerce", description: "Conversion-first storefronts, catalog management, and seamless checkout experiences.", icon: "ShoppingCart", featured: false, colSpan: 1 },
+  { slug: "legacy-modernization", title: "Legacy Modernisation", shortTitle: "Modernisation", description: "Migrate and modernise aging systems without disrupting business continuity.", icon: "RefreshCw", featured: false, colSpan: 1 },
+  { slug: "dedicated-teams", title: "Dedicated Development Teams", shortTitle: "Dedicated Teams", description: "Flexible, sprint-managed teams of developers, designers, and QA that scale with your roadmap.", icon: "Users", featured: false, colSpan: 1 },
+  { slug: "software-testing", title: "Software Testing & QA", shortTitle: "QA & Testing", description: "Automated and manual testing strategies that ensure production-grade reliability.", icon: "ShieldCheck", featured: false, colSpan: 1 },
+  { slug: "product-discovery", title: "Product Discovery Workshop", shortTitle: "Discovery", description: "3–10 day workshops that define scope, validate assumptions, and produce an actionable roadmap.", icon: "Search", featured: false, colSpan: 1 },
+  { slug: "edtech-software", title: "EdTech Software", shortTitle: "EdTech", description: "Learning platforms, assessment tools, and cohort analytics built for engagement and retention.", icon: "BookOpen", featured: false, colSpan: 1 },
+  { slug: "logistics-software", title: "Logistics Software", shortTitle: "Logistics", description: "Fleet management, dispatch consoles, real-time tracking, and proof-of-delivery systems.", icon: "Truck", featured: false, colSpan: 1 },
+  { slug: "real-estate-software", title: "Real Estate Software", shortTitle: "Real Estate", description: "Property search, agent CRM, listing sync, and lead routing for modern property businesses.", icon: "Building", featured: false, colSpan: 1 },
+  { slug: "graphic-design", title: "Graphic Design", shortTitle: "Design", description: "Brand identity, UI assets, and visual communication that makes your product memorable.", icon: "Palette", featured: false, colSpan: 1 },
 ];
 
 export const STATS = [
-  { value: 150, suffix: "+", label: "Projects Delivered" },
-  { value: 50, suffix: "+", label: "Happy Clients" },
-  { value: 8, suffix: "+", label: "Years of Innovation" },
-  { value: 99, suffix: "%", label: "Client Satisfaction" },
+  { value: 240, suffix: "+", label: "Businesses Served" },
+  { value: 99.99, suffix: "%", label: "Uptime Achieved" },
+  { value: 60, suffix: "%", label: "Avg Latency Reduction" },
+  { value: 98, suffix: "%", label: "On-Time Delivery" },
 ];
 
 export const TECH_STACK = {
@@ -927,6 +949,84 @@ export const CASE_STUDIES = [
     image: "/images/work/finvest.svg",
     tags: ["Next.js", "MDX", "PostgreSQL"],
     color: "#8B5CF6",
+  },
+  {
+    slug: "bazarkart",
+    title: "Bazarkart",
+    subtitle: "E-commerce Mobile App",
+    industry: "E-commerce",
+    year: "2024",
+    category: "Mobile",
+    description: "Feature-rich e-commerce mobile app with secure transactions, product catalog, and real-time order tracking.",
+    problem: "Sellers needed a mobile-first marketplace with secure payments and real-time inventory.",
+    approach: "We designed a clean mobile UX, integrated payment gateways, and built a scalable product catalog backend.",
+    solution: "A cross-platform e-commerce app with product discovery, cart, secure checkout, and order tracking.",
+    duration: "10 weeks",
+    services: ["Mobile engineering", "UI/UX", "Backend", "Payments"],
+    deliverables: ["iOS & Android app", "Seller dashboard", "Payment integration", "Order tracking"],
+    features: ["Product catalog", "Secure checkout", "Order tracking", "Push notifications"],
+    results: [
+      { metric: "10K+", label: "Downloads" },
+      { metric: "4.7★", label: "App rating" },
+      { metric: "99.9%", label: "Payment success" },
+      { metric: "<2s", label: "Page load" },
+    ],
+    metric: "4.7★ App Store rating",
+    image: "/images/work/orbita.svg",
+    tags: ["Flutter", "Node.js", "PostgreSQL", "Razorpay"],
+    color: "#8B5CF6",
+  },
+  {
+    slug: "bibbox-b2b",
+    title: "Bibbox B2B",
+    subtitle: "Wholesale E-commerce Platform",
+    industry: "B2B Commerce",
+    year: "2024",
+    category: "Web",
+    description: "B2B wholesale platform connecting suppliers with bulk buyers — catalog, negotiation, and order management in one place.",
+    problem: "Wholesalers relied on phone calls and spreadsheets with no digital order management.",
+    approach: "We built a B2B portal with tiered pricing, bulk order flows, and supplier-buyer communication.",
+    solution: "A wholesale commerce platform with bulk pricing, RFQ workflows, and order management.",
+    duration: "12 weeks",
+    services: ["Web app", "B2B workflows", "Backend", "Integrations"],
+    deliverables: ["Buyer portal", "Supplier dashboard", "Order management", "Negotiation flows"],
+    features: ["Bulk pricing tiers", "RFQ system", "Invoice generation", "Multi-location inventory"],
+    results: [
+      { metric: "+65%", label: "Order efficiency" },
+      { metric: "-70%", label: "Manual processing" },
+      { metric: "500+", label: "Active suppliers" },
+      { metric: "99.9%", label: "Uptime" },
+    ],
+    metric: "+65% order efficiency",
+    image: "/images/work/finvest.svg",
+    tags: ["Next.js", "Node.js", "PostgreSQL", "AWS"],
+    color: "#06B6D4",
+  },
+  {
+    slug: "gym-tym",
+    title: "Gym Tym",
+    subtitle: "Fitness Platform",
+    industry: "Health & Fitness",
+    year: "2023",
+    category: "Mobile",
+    description: "State-of-the-art fitness platform with workout plans, progress tracking, and community features.",
+    problem: "Fitness enthusiasts lacked a personalized platform to track progress and access expert-curated plans.",
+    approach: "We designed a gamified mobile experience with personalized plans, progress analytics, and social features.",
+    solution: "A mobile fitness app with curated workouts, progress tracking, nutrition logging, and community leaderboards.",
+    duration: "8 weeks",
+    services: ["Mobile engineering", "UX Design", "Backend", "Analytics"],
+    deliverables: ["iOS & Android app", "Trainer portal", "Progress dashboard", "Community feed"],
+    features: ["Workout plans", "Progress tracking", "Nutrition logging", "Live challenges"],
+    results: [
+      { metric: "+44%", label: "User retention" },
+      { metric: "4.8★", label: "App rating" },
+      { metric: "5K+", label: "Active users" },
+      { metric: "-30%", label: "Drop-off" },
+    ],
+    metric: "4.8★ — 5K+ active users",
+    image: "/images/work/orbita.svg",
+    tags: ["React Native", "Node.js", "MongoDB"],
+    color: "#10B981",
   },
 ];
 

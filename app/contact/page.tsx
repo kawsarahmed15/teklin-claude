@@ -3,10 +3,10 @@
 import { useState } from "react";
 import type { Metadata } from "next";
 import { motion, AnimatePresence } from "motion/react";
-import { Mail, MapPin, Clock, CheckCircle, Loader2, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Clock, CheckCircle, Loader2, ArrowRight, Phone, Globe, ExternalLink } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { TextReveal } from "@/components/animations/TextReveal";
-import { SITE_EMAIL } from "@/lib/constants";
+import { SITE_EMAIL, SITE_PHONE, SITE_ADDRESS, SITE_HOURS, SOCIAL_LINKS } from "@/lib/constants";
 
 const PROJECT_TYPES = [
   "Web Application",
@@ -283,11 +283,13 @@ export default function ContactPage() {
 
                   <div className="flex gap-3">
                     <div className="w-10 h-10 rounded-lg bg-[#27272A] flex items-center justify-center flex-shrink-0">
-                      <Clock size={16} className="text-[#10B981]" />
+                      <Phone size={16} className="text-[#8B5CF6]" />
                     </div>
                     <div>
-                      <p className="text-xs text-[#71717A] mb-0.5">Response time</p>
-                      <p className="text-sm">Within 24 hours</p>
+                      <p className="text-xs text-[#71717A] mb-0.5">Phone</p>
+                      <a href={`tel:${SITE_PHONE}`} className="text-sm hover:text-[#8B5CF6] transition-colors">
+                        {SITE_PHONE}
+                      </a>
                     </div>
                   </div>
 
@@ -296,8 +298,50 @@ export default function ContactPage() {
                       <MapPin size={16} className="text-[#06B6D4]" />
                     </div>
                     <div>
-                      <p className="text-xs text-[#71717A] mb-0.5">Based in</p>
-                      <p className="text-sm">India — serving clients worldwide</p>
+                      <p className="text-xs text-[#71717A] mb-0.5">Address</p>
+                      <p className="text-sm">Kanishail, Sribhumi, Karimganj, Assam 788727, India</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#27272A] flex items-center justify-center flex-shrink-0">
+                      <Clock size={16} className="text-[#10B981]" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-[#71717A] mb-0.5">Office hours</p>
+                      <p className="text-sm">{SITE_HOURS}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#27272A] flex items-center justify-center flex-shrink-0">
+                      <Globe size={16} className="text-[#F97316]" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-[#71717A] mb-0.5">Languages</p>
+                      <p className="text-sm">English, Hindi, Assamese</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-[#27272A]">
+                    <p className="text-xs text-[#71717A] mb-3">Follow us</p>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        { label: "Facebook", href: SOCIAL_LINKS.facebook },
+                        { label: "Instagram", href: SOCIAL_LINKS.instagram },
+                        { label: "LinkedIn", href: SOCIAL_LINKS.linkedin },
+                        { label: "X", href: SOCIAL_LINKS.twitter },
+                      ].map(({ label, href }) => (
+                        <a
+                          key={label}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-[#3F3F46] text-xs text-[#71717A] hover:text-[#FAFAFA] hover:border-[#8B5CF6] transition-colors"
+                        >
+                          {label} <ExternalLink size={10} />
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -308,9 +352,9 @@ export default function ContactPage() {
                 <div className="card-dark space-y-3">
                   <h3 className="font-semibold text-lg mb-4">Why work with us</h3>
                   {[
-                    "Trusted by 50+ companies",
-                    "99% client satisfaction rate",
-                    "8+ years of experience",
+                    "240+ businesses served",
+                    "99.99% uptime achieved",
+                    "98% on-time delivery rate",
                     "NDA available on request",
                     "No lock-in contracts",
                   ].map((item) => (

@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ExternalLink, Mail, ArrowRight } from "lucide-react";
+import { ExternalLink, Mail, ArrowRight, Phone, MapPin } from "lucide-react";
 import { Logo } from "@/components/shared/Logo";
 import { MagneticButton } from "@/components/animations/MagneticButton";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { SITE_EMAIL } from "@/lib/constants";
+import { SITE_EMAIL, SITE_PHONE, SOCIAL_LINKS } from "@/lib/constants";
 
 const footerLinks = {
   Company: [
@@ -27,6 +27,7 @@ const footerLinks = {
     { label: "Digital Transformation", href: "/services/digital-transformation" },
   ],
   Resources: [
+    { label: "Project Estimator", href: "/estimate" },
     { label: "Blog", href: "/insights" },
     { label: "Case Studies", href: "/work" },
     { label: "Process", href: "/process" },
@@ -35,10 +36,11 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: ExternalLink, href: "https://twitter.com", label: "Twitter", title: "X / Twitter" },
-  { icon: ExternalLink, href: "https://linkedin.com", label: "LinkedIn", title: "LinkedIn" },
-  { icon: ExternalLink, href: "https://github.com", label: "GitHub", title: "GitHub" },
-  { icon: Mail, href: `mailto:${SITE_EMAIL}`, label: "Email", title: "Email" },
+  { href: SOCIAL_LINKS.twitter, title: "X" },
+  { href: SOCIAL_LINKS.linkedin, title: "LinkedIn" },
+  { href: SOCIAL_LINKS.instagram, title: "Instagram" },
+  { href: SOCIAL_LINKS.facebook, title: "Facebook" },
+  { href: `mailto:${SITE_EMAIL}`, title: "Email" },
 ];
 
 export function Footer() {
@@ -96,21 +98,31 @@ export function Footer() {
             <div onClick={handleLogoClick} className="cursor-pointer inline-block mb-6">
               <Logo size="md" />
             </div>
-            <p className="text-[#71717A] text-sm leading-relaxed max-w-xs mb-6">
-              Full-spectrum software development company. We design, build, and scale digital
-              products that users love and businesses depend on.
+            <p className="text-[#71717A] text-sm leading-relaxed max-w-xs mb-3">
+              Your trusted partner in innovation and rapid growth.
             </p>
-            <div className="flex items-center gap-3">
-              {socialLinks.map(({ href, label, title }) => (
+            <div className="space-y-1.5 mb-5">
+              <a href={`mailto:${SITE_EMAIL}`} className="flex items-center gap-2 text-xs text-[#71717A] hover:text-[#A1A1AA] transition-colors">
+                <Mail size={12} /> {SITE_EMAIL}
+              </a>
+              <a href={`tel:${SITE_PHONE}`} className="flex items-center gap-2 text-xs text-[#71717A] hover:text-[#A1A1AA] transition-colors">
+                <Phone size={12} /> {SITE_PHONE}
+              </a>
+              <span className="flex items-center gap-2 text-xs text-[#71717A]">
+                <MapPin size={12} /> Karimganj, Assam, India
+              </span>
+            </div>
+            <div className="flex items-center flex-wrap gap-2">
+              {socialLinks.map(({ href, title }) => (
                 <a
-                  key={label}
+                  key={title}
                   href={href}
-                  target="_blank"
+                  target={href.startsWith("mailto") ? undefined : "_blank"}
                   rel="noopener noreferrer"
                   aria-label={title}
                   className="px-3 py-1.5 rounded-full border border-[#3F3F46] text-[#71717A] hover:text-[#FAFAFA] hover:border-[#8B5CF6] transition-colors duration-200 text-xs font-medium"
                 >
-                  {title === "Email" ? <Mail size={14} /> : title}
+                  {title}
                 </a>
               ))}
             </div>

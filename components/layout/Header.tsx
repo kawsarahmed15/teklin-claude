@@ -13,10 +13,15 @@ import { cn } from "@/lib/utils";
 import { easeOutExpo } from "@/lib/animations";
 
 export function Header() {
+  const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -76,22 +81,26 @@ export function Header() {
             >
               <AnimatePresence mode="wait" initial={false}>
                 <motion.span
-                  key={theme}
+                  key={mounted ? theme : "server"}
                   initial={{ opacity: 0, rotate: -90 }}
                   animate={{ opacity: 1, rotate: 0 }}
                   exit={{ opacity: 0, rotate: 90 }}
                   transition={{ duration: 0.2 }}
                   className="block"
                 >
-                  {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+                  {mounted ? (
+                    theme === "dark" ? <Sun size={18} /> : <Moon size={18} />
+                  ) : (
+                    <div style={{ width: 18, height: 18 }} />
+                  )}
                 </motion.span>
               </AnimatePresence>
             </button>
 
             {/* CTA */}
             <MagneticButton className="hidden lg:block">
-              <Link href="/contact" className="btn-primary text-sm py-2.5 px-5">
-                Start a Project
+              <Link href="/estimate" className="btn-primary text-sm py-2.5 px-5">
+                Get an Estimate
                 <ArrowRight size={15} />
               </Link>
             </MagneticButton>
@@ -154,8 +163,8 @@ export function Header() {
                 transition={{ delay: 0.5, duration: 0.4, ease: easeOutExpo }}
                 className="mt-8"
               >
-                <Link href="/contact" className="btn-primary w-full justify-center text-base py-4">
-                  Start a Project <ArrowRight size={18} />
+                <Link href="/estimate" className="btn-primary w-full justify-center text-base py-4">
+                  Get an Estimate <ArrowRight size={18} />
                 </Link>
               </motion.div>
             </nav>
