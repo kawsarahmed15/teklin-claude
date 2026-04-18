@@ -75,7 +75,7 @@ export default function WorkPage() {
                     data-cursor="View"
                   >
                     {/* Product screenshot */}
-                    <div className="h-48 rounded-lg mb-5 relative overflow-hidden">
+                    <div className="h-44 rounded-lg mb-3 relative overflow-hidden">
                       <Image
                         src={study.image}
                         alt={`${study.title} screenshot`}
@@ -92,16 +92,16 @@ export default function WorkPage() {
                       </div>
                     </div>
 
-                    <p className="badge-pill inline-flex mb-3">{study.industry}</p>
-                    <h2 className="text-xl font-bold mb-1 text-[#FAFAFA]">{study.title}</h2>
+                    <p className="badge-pill inline-flex mb-2">{study.industry}</p>
+                    <h2 className="text-lg font-bold mb-0.5 text-[#FAFAFA]">{study.title}</h2>
                     <p className="text-sm text-[#A1A1AA] mb-1">{study.subtitle}</p>
-                    <p className="text-sm text-[#71717A] mb-4 leading-relaxed">{study.description}</p>
+                    <p className="text-sm text-[#71717A] mb-3 leading-relaxed line-clamp-2">{study.description}</p>
 
                     <p className="text-sm font-bold" style={{ color: study.color }}>
                       {study.metric}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mt-4">
+                    <div className="flex flex-wrap gap-2 mt-3">
                       {study.tags.map((tag) => (
                         <span key={tag} className="badge-pill text-xs">{tag}</span>
                       ))}

@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050D14"/>
+      <stop offset="100%" stop-color="#040A10"/>
+    </linearGradient>
+    <linearGradient id="bb-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="bb-chart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bb-bg)"/>
+  <ellipse cx="600" cy="300" rx="500" ry="300" fill="#06B6D4" fill-opacity="0.04"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="210" height="675" fill="#080F18"/>
+  <line x1="210" y1="0" x2="210" y2="675" stroke="#0F2030" stroke-width="1"/>
+
+  <!-- Logo -->
+  <rect x="20" y="20" width="36" height="36" rx="10" fill="url(#bb-cyan)"/>
+  <text x="38" y="43" font-family="sans-serif" font-size="17" font-weight="800" fill="white" text-anchor="middle">B</text>
+  <text x="66" y="36" font-family="sans-serif" font-size="15" font-weight="700" fill="#FAFAFA">Bibbox</text>
+  <text x="66" y="50" font-family="sans-serif" font-size="10" fill="#06B6D4">B2B Wholesale Platform</text>
+
+  <!-- Nav -->
+  <rect x="12" y="72" width="186" height="34" rx="8" fill="#06B6D420"/>
+  <text x="44" y="93" font-family="sans-serif" font-size="12" fill="#06B6D4" font-weight="500">📊  Dashboard</text>
+
+  <text x="44" y="128" font-family="sans-serif" font-size="12" fill="#52525B">📦  Orders</text>
+  <text x="44" y="158" font-family="sans-serif" font-size="12" fill="#52525B">🏭  Suppliers</text>
+  <text x="44" y="188" font-family="sans-serif" font-size="12" fill="#52525B">📋  Catalog</text>
+  <text x="44" y="218" font-family="sans-serif" font-size="12" fill="#52525B">💰  Pricing</text>
+  <text x="44" y="248" font-family="sans-serif" font-size="12" fill="#52525B">📈  Analytics</text>
+  <text x="44" y="278" font-family="sans-serif" font-size="12" fill="#52525B">🔔  RFQ Queue</text>
+  <text x="44" y="308" font-family="sans-serif" font-size="12" fill="#52525B">⚙️  Settings</text>
+
+  <!-- Active supplier info -->
+  <rect x="12" y="610" width="186" height="50" rx="8" fill="#0F2030"/>
+  <circle cx="36" cy="635" r="12" fill="#06B6D430"/>
+  <text x="36" y="639" font-family="sans-serif" font-size="9" fill="#06B6D4" text-anchor="middle" font-weight="700">AS</text>
+  <text x="56" y="629" font-family="sans-serif" font-size="11" fill="#FAFAFA">Admin User</text>
+  <text x="56" y="643" font-family="sans-serif" font-size="9" fill="#52525B">Super Admin</text>
+  <rect x="168" y="626" width="22" height="18" rx="4" fill="#0F2030"/>
+  <text x="179" y="639" font-family="sans-serif" font-size="9" fill="#71717A" text-anchor="middle">⋮</text>
+
+  <!-- Top bar -->
+  <rect x="210" y="0" width="990" height="54" fill="#080F18"/>
+  <line x1="210" y1="54" x2="1200" y2="54" stroke="#0F2030" stroke-width="1"/>
+  <text x="234" y="28" font-family="sans-serif" font-size="17" font-weight="700" fill="#FAFAFA">Wholesale Dashboard</text>
+  <text x="234" y="44" font-family="sans-serif" font-size="10" fill="#52525B">Live B2B order management · 500+ active suppliers</text>
+
+  <!-- Search + actions -->
+  <rect x="890" y="13" width="190" height="28" rx="7" fill="#0F1E2E" stroke="#0F2030" stroke-width="1"/>
+  <text x="906" y="31" font-family="sans-serif" font-size="11" fill="#52525B">Search suppliers...</text>
+  <rect x="1100" y="13" width="80" height="28" rx="7" fill="url(#bb-cyan)"/>
+  <text x="1140" y="31" font-family="sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">+ New RFQ</text>
+
+  <!-- KPI Cards -->
+  <!-- Card 1 -->
+  <rect x="230" y="68" width="175" height="88" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="250" y="90" font-family="sans-serif" font-size="10" fill="#71717A">Total Orders</text>
+  <text x="250" y="120" font-family="sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">2,847</text>
+  <rect x="250" y="134" width="64" height="14" rx="4" fill="#10B98120"/>
+  <text x="258" y="145" font-family="sans-serif" font-size="9" fill="#10B981">↑ +65% efficiency</text>
+
+  <!-- Card 2 -->
+  <rect x="420" y="68" width="175" height="88" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="440" y="90" font-family="sans-serif" font-size="10" fill="#71717A">Active Suppliers</text>
+  <text x="440" y="120" font-family="sans-serif" font-size="26" font-weight="800" fill="#06B6D4">500+</text>
+  <rect x="440" y="134" width="80" height="14" rx="4" fill="#06B6D420"/>
+  <text x="448" y="145" font-family="sans-serif" font-size="9" fill="#06B6D4">Across India</text>
+
+  <!-- Card 3 -->
+  <rect x="610" y="68" width="175" height="88" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="630" y="90" font-family="sans-serif" font-size="10" fill="#71717A">Manual Processing</text>
+  <text x="630" y="120" font-family="sans-serif" font-size="26" font-weight="800" fill="#10B981">-70%</text>
+  <rect x="630" y="134" width="72" height="14" rx="4" fill="#10B98120"/>
+  <text x="638" y="145" font-family="sans-serif" font-size="9" fill="#10B981">Automated flows</text>
+
+  <!-- Card 4 -->
+  <rect x="800" y="68" width="175" height="88" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="820" y="90" font-family="sans-serif" font-size="10" fill="#71717A">System Uptime</text>
+  <text x="820" y="120" font-family="sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">99.9%</text>
+  <rect x="820" y="134" width="54" height="14" rx="4" fill="#8B5CF620"/>
+  <text x="828" y="145" font-family="sans-serif" font-size="9" fill="#8B5CF6">Production</text>
+
+  <!-- Orders table -->
+  <rect x="230" y="170" width="570" height="310" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="250" y="194" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Recent Bulk Orders</text>
+  <text x="718" y="194" font-family="sans-serif" font-size="10" fill="#52525B">2,847 orders this month</text>
+
+  <!-- Filter tabs -->
+  <rect x="250" y="202" width="56" height="20" rx="5" fill="#06B6D420"/>
+  <text x="278" y="216" font-family="sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle">All Orders</text>
+  <rect x="316" y="202" width="52" height="20" rx="5" fill="#0F1E2E"/>
+  <text x="342" y="216" font-family="sans-serif" font-size="10" fill="#52525B" text-anchor="middle">Pending</text>
+  <rect x="378" y="202" width="54" height="20" rx="5" fill="#0F1E2E"/>
+  <text x="405" y="216" font-family="sans-serif" font-size="10" fill="#52525B" text-anchor="middle">Shipped</text>
+  <rect x="442" y="202" width="60" height="20" rx="5" fill="#0F1E2E"/>
+  <text x="472" y="216" font-family="sans-serif" font-size="10" fill="#52525B" text-anchor="middle">Completed</text>
+
+  <!-- Table header -->
+  <rect x="246" y="228" width="538" height="22" rx="4" fill="#0F1E2E"/>
+  <text x="262" y="243" font-family="sans-serif" font-size="10" fill="#52525B">Order ID</text>
+  <text x="370" y="243" font-family="sans-serif" font-size="10" fill="#52525B">Supplier</text>
+  <text x="490" y="243" font-family="sans-serif" font-size="10" fill="#52525B">Category</text>
+  <text x="590" y="243" font-family="sans-serif" font-size="10" fill="#52525B">Value</text>
+  <text x="660" y="243" font-family="sans-serif" font-size="10" fill="#52525B">Units</text>
+  <text x="724" y="243" font-family="sans-serif" font-size="10" fill="#52525B">Status</text>
+
+  <!-- Table rows -->
+  <!-- Row 1 -->
+  <rect x="246" y="252" width="538" height="22" rx="2" fill="#06B6D408"/>
+  <text x="262" y="267" font-family="monospace" font-size="10" fill="#FAFAFA">#BB-4821</text>
+  <text x="370" y="267" font-family="sans-serif" font-size="10" fill="#A1A1AA">Arora Textiles</text>
+  <text x="490" y="267" font-family="sans-serif" font-size="10" fill="#A1A1AA">Fabrics</text>
+  <text x="590" y="267" font-family="monospace" font-size="10" fill="#FAFAFA">₹2,84,000</text>
+  <text x="660" y="267" font-family="monospace" font-size="10" fill="#A1A1AA">1,200</text>
+  <rect x="724" y="257" width="54" height="14" rx="4" fill="#10B98120"/>
+  <text x="732" y="268" font-family="sans-serif" font-size="9" fill="#10B981">Completed</text>
+
+  <line x1="246" y1="274" x2="784" y2="274" stroke="#0F2030" stroke-width="0.5"/>
+
+  <!-- Row 2 -->
+  <text x="262" y="291" font-family="monospace" font-size="10" fill="#FAFAFA">#BB-4819</text>
+  <text x="370" y="291" font-family="sans-serif" font-size="10" fill="#A1A1AA">Kumar Electronics</text>
+  <text x="490" y="291" font-family="sans-serif" font-size="10" fill="#A1A1AA">Electronics</text>
+  <text x="590" y="291" font-family="monospace" font-size="10" fill="#FAFAFA">₹5,42,000</text>
+  <text x="660" y="291" font-family="monospace" font-size="10" fill="#A1A1AA">340</text>
+  <rect x="724" y="281" width="50" height="14" rx="4" fill="#06B6D420"/>
+  <text x="732" y="292" font-family="sans-serif" font-size="9" fill="#06B6D4">In Transit</text>
+
+  <line x1="246" y1="298" x2="784" y2="298" stroke="#0F2030" stroke-width="0.5"/>
+
+  <!-- Row 3 -->
+  <text x="262" y="315" font-family="monospace" font-size="10" fill="#FAFAFA">#BB-4817</text>
+  <text x="370" y="315" font-family="sans-serif" font-size="10" fill="#A1A1AA">Singh Agro Foods</text>
+  <text x="490" y="315" font-family="sans-serif" font-size="10" fill="#A1A1AA">FMCG</text>
+  <text x="590" y="315" font-family="monospace" font-size="10" fill="#FAFAFA">₹1,18,500</text>
+  <text x="660" y="315" font-family="monospace" font-size="10" fill="#A1A1AA">2,400</text>
+  <rect x="724" y="305" width="62" height="14" rx="4" fill="#F59E0B20"/>
+  <text x="732" y="316" font-family="sans-serif" font-size="9" fill="#F59E0B">Processing</text>
+
+  <line x1="246" y1="322" x2="784" y2="322" stroke="#0F2030" stroke-width="0.5"/>
+
+  <!-- Row 4 -->
+  <text x="262" y="339" font-family="monospace" font-size="10" fill="#FAFAFA">#BB-4815</text>
+  <text x="370" y="339" font-family="sans-serif" font-size="10" fill="#A1A1AA">Patel Hardware Co.</text>
+  <text x="490" y="339" font-family="sans-serif" font-size="10" fill="#A1A1AA">Hardware</text>
+  <text x="590" y="339" font-family="monospace" font-size="10" fill="#FAFAFA">₹3,67,200</text>
+  <text x="660" y="339" font-family="monospace" font-size="10" fill="#A1A1AA">890</text>
+  <rect x="724" y="329" width="54" height="14" rx="4" fill="#10B98120"/>
+  <text x="732" y="340" font-family="sans-serif" font-size="9" fill="#10B981">Completed</text>
+
+  <line x1="246" y1="346" x2="784" y2="346" stroke="#0F2030" stroke-width="0.5"/>
+
+  <!-- Row 5 -->
+  <text x="262" y="363" font-family="monospace" font-size="10" fill="#FAFAFA">#BB-4812</text>
+  <text x="370" y="363" font-family="sans-serif" font-size="10" fill="#A1A1AA">Mehta Pharma</text>
+  <text x="490" y="363" font-family="sans-serif" font-size="10" fill="#A1A1AA">Healthcare</text>
+  <text x="590" y="363" font-family="monospace" font-size="10" fill="#FAFAFA">₹8,21,000</text>
+  <text x="660" y="363" font-family="monospace" font-size="10" fill="#A1A1AA">5,000</text>
+  <rect x="724" y="353" width="50" height="14" rx="4" fill="#06B6D420"/>
+  <text x="732" y="364" font-family="sans-serif" font-size="9" fill="#06B6D4">In Transit</text>
+
+  <line x1="246" y1="370" x2="784" y2="370" stroke="#0F2030" stroke-width="0.5"/>
+
+  <!-- Row 6 -->
+  <text x="262" y="387" font-family="monospace" font-size="10" fill="#FAFAFA">#BB-4810</text>
+  <text x="370" y="387" font-family="sans-serif" font-size="10" fill="#A1A1AA">Verma Garments</text>
+  <text x="490" y="387" font-family="sans-serif" font-size="10" fill="#A1A1AA">Apparel</text>
+  <text x="590" y="387" font-family="monospace" font-size="10" fill="#FAFAFA">₹4,55,000</text>
+  <text x="660" y="387" font-family="monospace" font-size="10" fill="#A1A1AA">3,200</text>
+  <rect x="724" y="377" width="54" height="14" rx="4" fill="#10B98120"/>
+  <text x="732" y="388" font-family="sans-serif" font-size="9" fill="#10B981">Completed</text>
+
+  <!-- Pagination -->
+  <text x="262" y="460" font-family="sans-serif" font-size="10" fill="#52525B">Showing 6 of 2,847 orders</text>
+  <rect x="672" y="446" width="50" height="22" rx="6" fill="#0F1E2E" stroke="#0F2030" stroke-width="1"/>
+  <text x="697" y="461" font-family="sans-serif" font-size="10" fill="#A1A1AA" text-anchor="middle">Prev</text>
+  <rect x="732" y="446" width="30" height="22" rx="6" fill="#06B6D420"/>
+  <text x="747" y="461" font-family="sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle">1</text>
+  <rect x="772" y="446" width="30" height="22" rx="6" fill="#0F1E2E"/>
+  <text x="787" y="461" font-family="sans-serif" font-size="10" fill="#A1A1AA" text-anchor="middle">2</text>
+
+  <!-- Right panel: Monthly Revenue Chart -->
+  <rect x="816" y="170" width="360" height="200" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="836" y="194" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Order Volume Trend</text>
+  <text x="1076" y="194" font-family="sans-serif" font-size="10" fill="#52525B">Last 6 months</text>
+  <!-- Chart gridlines -->
+  <line x1="836" y1="220" x2="1156" y2="220" stroke="#0F2030" stroke-width="0.5"/>
+  <line x1="836" y1="245" x2="1156" y2="245" stroke="#0F2030" stroke-width="0.5"/>
+  <line x1="836" y1="270" x2="1156" y2="270" stroke="#0F2030" stroke-width="0.5"/>
+  <line x1="836" y1="295" x2="1156" y2="295" stroke="#0F2030" stroke-width="0.5"/>
+  <line x1="836" y1="320" x2="1156" y2="320" stroke="#0F2030" stroke-width="0.5"/>
+  <!-- Y labels -->
+  <text x="830" y="224" font-family="monospace" font-size="8" fill="#3F3F46" text-anchor="end">500</text>
+  <text x="830" y="249" font-family="monospace" font-size="8" fill="#3F3F46" text-anchor="end">400</text>
+  <text x="830" y="274" font-family="monospace" font-size="8" fill="#3F3F46" text-anchor="end">300</text>
+  <text x="830" y="299" font-family="monospace" font-size="8" fill="#3F3F46" text-anchor="end">200</text>
+  <text x="830" y="324" font-family="monospace" font-size="8" fill="#3F3F46" text-anchor="end">100</text>
+  <!-- Chart fill -->
+  <polygon points="836,310 890,290 944,270 998,240 1052,215 1106,205 1156,200 1156,330 836,330" fill="url(#bb-chart)"/>
+  <!-- Chart line -->
+  <polyline points="836,310 890,290 944,270 998,240 1052,215 1106,205 1156,200" fill="none" stroke="#06B6D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Data points -->
+  <circle cx="836" cy="310" r="3.5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <circle cx="890" cy="290" r="3.5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <circle cx="944" cy="270" r="3.5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <circle cx="998" cy="240" r="3.5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <circle cx="1052" cy="215" r="3.5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <circle cx="1106" cy="205" r="3.5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <circle cx="1156" cy="200" r="5" fill="#06B6D4" stroke="#050D14" stroke-width="2"/>
+  <!-- Month labels -->
+  <text x="836" y="348" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Oct</text>
+  <text x="890" y="348" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Nov</text>
+  <text x="944" y="348" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Dec</text>
+  <text x="998" y="348" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Jan</text>
+  <text x="1052" y="348" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Feb</text>
+  <text x="1106" y="348" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Mar</text>
+  <text x="1156" y="348" font-family="sans-serif" font-size="9" fill="#06B6D4" text-anchor="middle">Apr</text>
+
+  <!-- RFQ Panel -->
+  <rect x="816" y="384" width="360" height="196" rx="12" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="836" y="408" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Active RFQ Requests</text>
+  <rect x="1114" y="397" width="48" height="20" rx="5" fill="#06B6D420"/>
+  <text x="1138" y="411" font-family="sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle">12 new</text>
+
+  <!-- RFQ items -->
+  <rect x="832" y="416" width="328" height="38" rx="8" fill="#0F1E2E"/>
+  <text x="846" y="432" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">200 units — Industrial Bearings</text>
+  <text x="846" y="446" font-family="sans-serif" font-size="9" fill="#71717A">Rajesh Machinery · Budget: ₹4,20,000</text>
+  <rect x="1088" y="422" width="64" height="22" rx="6" fill="url(#bb-cyan)"/>
+  <text x="1120" y="436" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">Respond</text>
+
+  <rect x="832" y="460" width="328" height="38" rx="8" fill="#0F1E2E"/>
+  <text x="846" y="476" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">500 kg — Organic Cotton Yarn</text>
+  <text x="846" y="490" font-family="sans-serif" font-size="9" fill="#71717A">Priya Textiles · Budget: ₹2,10,000</text>
+  <rect x="1088" y="466" width="64" height="22" rx="6" fill="url(#bb-cyan)"/>
+  <text x="1120" y="480" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">Respond</text>
+
+  <rect x="832" y="504" width="328" height="38" rx="8" fill="#0F1E2E"/>
+  <text x="846" y="520" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">1000 pcs — Safety Helmets</text>
+  <text x="846" y="534" font-family="sans-serif" font-size="9" fill="#71717A">Sharma Constructions · Budget: ₹1,50,000</text>
+  <rect x="1088" y="510" width="64" height="22" rx="6" fill="url(#bb-cyan)"/>
+  <text x="1120" y="524" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">Respond</text>
+
+  <!-- Bottom: Teklin badge -->
+  <rect x="230" y="500" width="106" height="26" rx="8" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="283" y="517" font-family="sans-serif" font-size="10" fill="#06B6D4" text-anchor="middle">Built by Teklin</text>
+  <rect x="348" y="500" width="120" height="26" rx="8" fill="#0A141E" stroke="#0F2030" stroke-width="1"/>
+  <text x="408" y="517" font-family="sans-serif" font-size="10" fill="#52525B" text-anchor="middle">bibbox.com</text>
+</svg>

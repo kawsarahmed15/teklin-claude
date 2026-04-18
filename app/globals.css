@@ -277,7 +277,7 @@ body {
   background-color: #18181B;
   border: 1px solid #3F3F46;
   border-radius: 16px;
-  padding: 32px;
+  padding: 20px;
   transition: border-color 300ms ease, transform 300ms ease, box-shadow 300ms ease;
 }
 .card-dark:hover {
@@ -551,6 +551,13 @@ body {
   background-color: rgba(139, 92, 246, 0.08);
   color: #09090B;
 }
+
+/* ============================================================
+   SCROLLBAR UTILITIES
+   ============================================================ */
+
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
 
 /* ============================================================
    SKIP TO CONTENT

@@ -6,9 +6,25 @@ import { TextReveal } from "@/components/animations/TextReveal";
 import { CountUp } from "@/components/animations/CountUp";
 
 export const metadata: Metadata = {
-  title: "About — A Team That Cares About Craft",
+  title: "About Teklin — Software Development Company India | Our Story & Team",
   description:
-    "Teklin is a software development company founded on the belief that great engineering and thoughtful design are the most powerful competitive advantages.",
+    "Learn about Teklin — India's trusted software development company. Our team of engineers, designers, and strategists has served 240+ businesses with custom software, mobile apps, SaaS, and AI/ML solutions.",
+  keywords: [
+    "about Teklin",
+    "software development company India team",
+    "IT company Assam",
+    "software engineers India",
+    "custom software company about",
+    "Teklin about us",
+  ],
+  alternates: { canonical: "https://teklin.in/about" },
+  openGraph: {
+    title: "About Teklin — India's Software Development Partner",
+    description: "240+ businesses served. Our team engineers digital products that move industries forward.",
+    url: "https://teklin.in/about",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", title: "About Teklin", description: "India's trusted software development company. 240+ businesses served." },
 };
 
 const VALUES = [
@@ -51,11 +67,10 @@ const TEAM = [
 ];
 
 const COMPANY_STATS = [
-  { value: 2016, suffix: "", label: "Founded" },
-  { value: 35, suffix: "+", label: "Team members" },
-  { value: 150, suffix: "+", label: "Projects delivered" },
-  { value: 12, suffix: "", label: "Countries served" },
-  { value: 97, suffix: "%", label: "Client retention" },
+  { value: 240, suffix: "+", label: "Businesses Served" },
+  { value: 99.99, suffix: "%", label: "Uptime Achieved" },
+  { value: 60, suffix: "%", label: "Avg Latency Reduction" },
+  { value: 98, suffix: "%", label: "On-Time Delivery" },
 ];
 
 export default function AboutPage() {
@@ -69,13 +84,13 @@ export default function AboutPage() {
             <p className="section-label mb-4">About us</p>
           </FadeIn>
           <TextReveal as="h1" className="text-display font-bold mb-6">
-            A team that cares about craft
+            Your trusted partner in innovation and rapid growth
           </TextReveal>
           <FadeIn delay={0.2}>
             <p className="text-[#A1A1AA] text-lg leading-relaxed max-w-2xl">
-              We&apos;re a team of engineers, designers, and problem-solvers who believe
-              that great software is one of the most powerful forces for change in
-              business and society.
+              We foster startup growth by applying the best technologies and sharing our expertise,
+              creating impactful solutions to improve lives. Based in Karimganj, Assam, India —
+              serving clients worldwide in English, Hindi, and Assamese.
             </p>
           </FadeIn>
         </div>
@@ -89,31 +104,31 @@ export default function AboutPage() {
               <h2 className="text-h2 font-bold mb-4">Our story</h2>
               <div className="space-y-4 text-[#A1A1AA] leading-relaxed">
                 <p>
-                  Teklin was founded in 2016 with a simple premise: the best software
-                  companies in the world shouldn&apos;t have a monopoly on great engineering.
+                  Teklin was born from a simple belief: every startup and growing business
+                  deserves access to world-class software engineering — regardless of size or location.
                 </p>
                 <p>
-                  We started as a two-person consultancy — two engineers who were tired
-                  of seeing promising startups and established businesses fail not because
-                  their ideas were bad, but because their software was.
+                  Founded in Karimganj, Assam, India, we set out to bridge the gap between
+                  ambitious founders and the technology expertise they need to turn ideas into
+                  impactful, scalable products.
                 </p>
                 <p>
-                  Eight years later, we&apos;re a 35-person team that has shipped over 150
-                  products, built long-term partnerships with clients across 12 countries,
-                  and maintained a 97% client retention rate.
+                  Today, we have served 240+ businesses, achieved 99.99% uptime across
+                  client infrastructure, and consistently delivered on time — partnering with
+                  startups and enterprises across India and globally.
                 </p>
                 <p>
-                  Our mission hasn&apos;t changed: help organisations build software that
-                  users love and businesses depend on.
+                  Our mission: foster startup growth by applying the best technologies and
+                  sharing our expertise, creating impactful solutions to improve lives.
                 </p>
               </div>
             </FadeIn>
             <FadeIn delay={0.15} variant="slideRight">
               <div className="grid grid-cols-2 gap-4">
-                {COMPANY_STATS.map((stat, i) => (
+                {COMPANY_STATS.map((stat) => (
                   <div
                     key={stat.label}
-                    className={`card-dark text-center ${i === 0 ? "col-span-2" : ""}`}
+                    className="card-dark text-center"
                   >
                     <p className="text-3xl font-bold gradient-text mb-1">
                       <CountUp value={stat.value} suffix={stat.suffix} />
