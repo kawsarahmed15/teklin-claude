@@ -14,6 +14,7 @@ const footerLinks = {
     { label: "Team", href: "/about#team" },
     { label: "Careers", href: "/careers" },
     { label: "Culture", href: "/about#culture" },
+    { label: "Contact", href: "/contact" },
   ],
   Services: [
     { label: "Custom Software", href: "/services/custom-software-development" },
@@ -24,14 +25,22 @@ const footerLinks = {
     { label: "Cloud & DevOps", href: "/services/cloud-devops" },
     { label: "UI/UX Design", href: "/services/ui-ux-design" },
     { label: "Enterprise", href: "/services/enterprise-software" },
-    { label: "Digital Transformation", href: "/services/digital-transformation" },
   ],
   Resources: [
     { label: "Project Estimator", href: "/estimate" },
-    { label: "Blog", href: "/insights" },
+    { label: "Blog / Insights", href: "/insights" },
     { label: "Case Studies", href: "/work" },
-    { label: "Process", href: "/process" },
-    { label: "Contact", href: "/contact" },
+    { label: "Our Process", href: "/process" },
+  ],
+  Locations: [
+    { label: "All Locations", href: "/locations" },
+    { label: "Bengaluru", href: "/locations/bengaluru" },
+    { label: "Mumbai", href: "/locations/mumbai" },
+    { label: "Delhi", href: "/locations/delhi" },
+    { label: "Hyderabad", href: "/locations/hyderabad" },
+    { label: "Guwahati", href: "/locations/guwahati" },
+    { label: "Silchar", href: "/locations/silchar" },
+    { label: "Karimganj", href: "/locations/karimganj" },
   ],
 };
 

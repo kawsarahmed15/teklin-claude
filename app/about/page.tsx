@@ -6,9 +6,25 @@ import { TextReveal } from "@/components/animations/TextReveal";
 import { CountUp } from "@/components/animations/CountUp";
 
 export const metadata: Metadata = {
-  title: "About — Your Trusted Partner in Innovation and Rapid Growth",
+  title: "About Teklin — Software Development Company India | Our Story & Team",
   description:
-    "Teklin fosters startup growth by applying the best technologies and sharing our expertise, creating impactful solutions to improve lives.",
+    "Learn about Teklin — India's trusted software development company. Our team of engineers, designers, and strategists has served 240+ businesses with custom software, mobile apps, SaaS, and AI/ML solutions.",
+  keywords: [
+    "about Teklin",
+    "software development company India team",
+    "IT company Assam",
+    "software engineers India",
+    "custom software company about",
+    "Teklin about us",
+  ],
+  alternates: { canonical: "https://teklin.in/about" },
+  openGraph: {
+    title: "About Teklin — India's Software Development Partner",
+    description: "240+ businesses served. Our team engineers digital products that move industries forward.",
+    url: "https://teklin.in/about",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", title: "About Teklin", description: "India's trusted software development company. 240+ businesses served." },
 };
 
 const VALUES = [

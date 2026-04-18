@@ -1,36 +1,60 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL, SERVICES, CASE_STUDIES, BLOG_POSTS } from "@/lib/constants";
+import { SITE_URL, SERVICES, CASE_STUDIES, BLOG_POSTS, LOCATIONS } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
-    { url: SITE_URL, changeFrequency: "weekly" as const, priority: 1 },
-    { url: `${SITE_URL}/services`, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${SITE_URL}/work`, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${SITE_URL}/about`, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${SITE_URL}/process`, changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${SITE_URL}/insights`, changeFrequency: "daily" as const, priority: 0.8 },
-    { url: `${SITE_URL}/careers`, changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: `${SITE_URL}/contact`, changeFrequency: "monthly" as const, priority: 0.9 },
+  const now = new Date();
+
+  // ── Core pages ─────────────────────────────────────────────────────────────
+  const staticRoutes: MetadataRoute.Sitemap = [
+    { url: SITE_URL,                              changeFrequency: "weekly",  priority: 1.0,  lastModified: now },
+    { url: `${SITE_URL}/services`,                changeFrequency: "weekly",  priority: 0.95, lastModified: now },
+    { url: `${SITE_URL}/work`,                    changeFrequency: "weekly",  priority: 0.9,  lastModified: now },
+    { url: `${SITE_URL}/about`,                   changeFrequency: "monthly", priority: 0.8,  lastModified: now },
+    { url: `${SITE_URL}/process`,                 changeFrequency: "monthly", priority: 0.7,  lastModified: now },
+    { url: `${SITE_URL}/insights`,                changeFrequency: "daily",   priority: 0.85, lastModified: now },
+    { url: `${SITE_URL}/careers`,                 changeFrequency: "weekly",  priority: 0.75, lastModified: now },
+    { url: `${SITE_URL}/contact`,                 changeFrequency: "monthly", priority: 0.95, lastModified: now },
+    { url: `${SITE_URL}/estimate`,                changeFrequency: "monthly", priority: 0.8,  lastModified: now },
+    { url: `${SITE_URL}/locations`,               changeFrequency: "weekly",  priority: 0.9,  lastModified: now },
   ];
 
-  const serviceRoutes = SERVICES.map((s) => ({
+  // ── Service pages ───────────────────────────────────────────────────────────
+  const serviceRoutes: MetadataRoute.Sitemap = SERVICES.map((s) => ({
     url: `${SITE_URL}/services/${s.slug}`,
     changeFrequency: "monthly" as const,
-    priority: 0.7,
+    priority: 0.8,
+    lastModified: now,
   }));
 
-  const workRoutes = CASE_STUDIES.map((s) => ({
+  // ── Work / Case studies ─────────────────────────────────────────────────────
+  const workRoutes: MetadataRoute.Sitemap = CASE_STUDIES.map((s) => ({
     url: `${SITE_URL}/work/${s.slug}`,
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: 0.65,
+    lastModified: now,
   }));
 
-  const blogRoutes = BLOG_POSTS.map((p) => ({
+  // ── Blog / Insights ─────────────────────────────────────────────────────────
+  const blogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((p) => ({
     url: `${SITE_URL}/insights/${p.slug}`,
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: 0.65,
     lastModified: new Date(p.date),
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...workRoutes, ...blogRoutes];
+  // ── Location pages (85 cities) ───────────────────────────────────────────────
+  const locationRoutes: MetadataRoute.Sitemap = LOCATIONS.map((l) => ({
+    url: `${SITE_URL}/locations/${l.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: l.type === "metro" ? 0.85 : l.type === "state" ? 0.8 : l.type === "tier2" ? 0.75 : 0.65,
+    lastModified: now,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...serviceRoutes,
+    ...workRoutes,
+    ...blogRoutes,
+    ...locationRoutes,
+  ];
 }

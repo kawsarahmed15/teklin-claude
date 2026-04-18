@@ -109,6 +109,8 @@ function CaseStudyCard({
   );
 }
 
+const REAL_WORK = CASE_STUDIES.filter((s) => (s as typeof s & { realWork?: boolean }).realWork);
+
 export function WorkSection() {
   return (
     <section className="section-padding bg-[#09090B]" id="work">
@@ -116,21 +118,21 @@ export function WorkSection() {
         {/* Header */}
         <div className="mb-16 max-w-2xl">
           <FadeIn>
-            <p className="section-label mb-4">Selected work</p>
+            <p className="section-label mb-4">Proven work</p>
           </FadeIn>
           <TextReveal as="h2" className="text-display font-bold mb-5">
             Projects that speak louder than pitches
           </TextReveal>
           <FadeIn delay={0.2}>
             <p className="text-[#A1A1AA] text-lg">
-              A selection of the work we&apos;re most proud of — and the results that came with it.
+              Real clients, real products, live in the world — and the results that came with it.
             </p>
           </FadeIn>
         </div>
 
-        {/* Case studies */}
+        {/* Real client work */}
         <div className="flex flex-col gap-20 lg:gap-28">
-          {CASE_STUDIES.slice(0, 6).map((study, i) => (
+          {REAL_WORK.map((study, i) => (
             <CaseStudyCard key={study.slug} study={study} index={i} />
           ))}
         </div>
@@ -138,7 +140,7 @@ export function WorkSection() {
         {/* CTA */}
         <FadeIn delay={0.2} className="mt-16 text-center">
           <Link href="/work" className="inline-flex items-center gap-2 text-[#A1A1AA] hover:text-[#FAFAFA] font-medium transition-colors group">
-            See all work
+            See all case studies
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </FadeIn>

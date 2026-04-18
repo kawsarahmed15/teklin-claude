@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="dt-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050A14"/>
+      <stop offset="100%" stop-color="#04080F"/>
+    </linearGradient>
+    <linearGradient id="dt-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="dt-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#dt-bg)"/>
+  <ellipse cx="400" cy="300" rx="450" ry="300" fill="#3B82F6" fill-opacity="0.05"/>
+  <ellipse cx="900" cy="380" rx="350" ry="250" fill="#06B6D4" fill-opacity="0.04"/>
+
+  <!-- LEFT SIDE: App info -->
+  <!-- Logo + brand -->
+  <rect x="60" y="55" width="48" height="48" rx="14" fill="url(#dt-blue)"/>
+  <text x="84" y="85" font-family="sans-serif" font-size="18" font-weight="800" fill="white" text-anchor="middle">DT</text>
+  <text x="122" y="74" font-family="sans-serif" font-size="22" font-weight="800" fill="#FAFAFA">DTech</text>
+  <text x="122" y="92" font-family="sans-serif" font-size="12" fill="#3B82F6">Technology Solutions &amp; Services</text>
+
+  <!-- Service categories -->
+  <text x="60" y="138" font-family="sans-serif" font-size="11" fill="#52525B">Our Services</text>
+
+  <!-- Service cards -->
+  <rect x="60" y="150" width="180" height="90" rx="12" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="80" y="178" font-family="sans-serif" font-size="22">💻</text>
+  <text x="80" y="200" font-family="sans-serif" font-size="12" font-weight="600" fill="#FAFAFA">Software Dev</text>
+  <text x="80" y="216" font-family="sans-serif" font-size="9" fill="#71717A">Custom solutions built</text>
+  <text x="80" y="228" font-family="sans-serif" font-size="9" fill="#71717A">for your business</text>
+
+  <rect x="254" y="150" width="180" height="90" rx="12" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="274" y="178" font-family="sans-serif" font-size="22">📱</text>
+  <text x="274" y="200" font-family="sans-serif" font-size="12" font-weight="600" fill="#FAFAFA">Mobile Apps</text>
+  <text x="274" y="216" font-family="sans-serif" font-size="9" fill="#71717A">iOS &amp; Android apps</text>
+  <text x="274" y="228" font-family="sans-serif" font-size="9" fill="#71717A">users love</text>
+
+  <rect x="60" y="254" width="180" height="90" rx="12" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="80" y="282" font-family="sans-serif" font-size="22">🤖</text>
+  <text x="80" y="304" font-family="sans-serif" font-size="12" font-weight="600" fill="#FAFAFA">AI Solutions</text>
+  <text x="80" y="320" font-family="sans-serif" font-size="9" fill="#71717A">Intelligent automation</text>
+  <text x="80" y="332" font-family="sans-serif" font-size="9" fill="#71717A">and ML integration</text>
+
+  <rect x="254" y="254" width="180" height="90" rx="12" fill="#3B82F620" stroke="#3B82F640" stroke-width="1"/>
+  <text x="274" y="282" font-family="sans-serif" font-size="22">☁️</text>
+  <text x="274" y="304" font-family="sans-serif" font-size="12" font-weight="600" fill="#FAFAFA">Cloud &amp; DevOps</text>
+  <text x="274" y="320" font-family="sans-serif" font-size="9" fill="#71717A">Scalable infra &amp;</text>
+  <text x="274" y="332" font-family="sans-serif" font-size="9" fill="#71717A">CI/CD pipelines</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="364" width="116" height="72" rx="10" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="80" y="388" font-family="sans-serif" font-size="9" fill="#71717A">Play Store</text>
+  <text x="80" y="412" font-family="sans-serif" font-size="20" font-weight="700" fill="#F59E0B">4.7★</text>
+  <text x="80" y="428" font-family="sans-serif" font-size="9" fill="#52525B">Rating</text>
+
+  <rect x="190" y="364" width="116" height="72" rx="10" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="210" y="388" font-family="sans-serif" font-size="9" fill="#71717A">App Users</text>
+  <text x="210" y="412" font-family="sans-serif" font-size="20" font-weight="700" fill="#06B6D4">2K+</text>
+  <text x="210" y="428" font-family="sans-serif" font-size="9" fill="#52525B">Active</text>
+
+  <rect x="320" y="364" width="114" height="72" rx="10" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="340" y="388" font-family="sans-serif" font-size="9" fill="#71717A">Industries</text>
+  <text x="340" y="412" font-family="sans-serif" font-size="20" font-weight="700" fill="#10B981">15+</text>
+  <text x="340" y="428" font-family="sans-serif" font-size="9" fill="#52525B">Served</text>
+
+  <!-- Tech stack -->
+  <text x="60" y="468" font-family="sans-serif" font-size="11" fill="#52525B">Tech Stack</text>
+  <rect x="60" y="478" width="55" height="22" rx="6" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="87" y="493" font-family="sans-serif" font-size="10" fill="#A1A1AA" text-anchor="middle">Flutter</text>
+  <rect x="125" y="478" width="60" height="22" rx="6" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="155" y="493" font-family="sans-serif" font-size="10" fill="#A1A1AA" text-anchor="middle">Firebase</text>
+  <rect x="195" y="478" width="68" height="22" rx="6" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="229" y="493" font-family="sans-serif" font-size="10" fill="#A1A1AA" text-anchor="middle">Node.js</text>
+  <rect x="273" y="478" width="60" height="22" rx="6" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="303" y="493" font-family="sans-serif" font-size="10" fill="#A1A1AA" text-anchor="middle">React</text>
+
+  <!-- CTA -->
+  <rect x="60" y="518" width="150" height="40" rx="10" fill="url(#dt-blue)"/>
+  <text x="135" y="543" font-family="sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">Get the App</text>
+  <rect x="222" y="518" width="110" height="40" rx="10" fill="#0A1220" stroke="#0F1E38" stroke-width="1"/>
+  <text x="277" y="543" font-family="sans-serif" font-size="12" fill="#A1A1AA" text-anchor="middle">Learn More</text>
+
+  <text x="60" y="604" font-family="sans-serif" font-size="10" fill="#52525B">Built by Teklin · Available on Google Play</text>
+
+  <!-- RIGHT SIDE: Phone mockup -->
+  <!-- Phone 1 - main -->
+  <rect x="568" y="40" width="252" height="500" rx="38" fill="#0A0E1A" stroke="#1A2540" stroke-width="2"/>
+  <rect x="580" y="62" width="228" height="460" rx="26" fill="#060A14"/>
+  <!-- Notch -->
+  <rect x="657" y="62" width="76" height="32" rx="16" fill="#0A0E1A"/>
+
+  <!-- App header -->
+  <rect x="580" y="94" width="228" height="50" fill="#060A14"/>
+  <text x="594" y="114" font-family="sans-serif" font-size="14" font-weight="700" fill="#FAFAFA">DTech</text>
+  <text x="594" y="130" font-family="sans-serif" font-size="10" fill="#3B82F6">Tech solutions for you</text>
+  <!-- Hamburger -->
+  <line x1="780" y1="108" x2="800" y2="108" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="776" y1="116" x2="800" y2="116" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="782" y1="124" x2="800" y2="124" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Hero banner -->
+  <rect x="588" y="148" width="212" height="80" rx="14" fill="url(#dt-blue)"/>
+  <text x="600" y="172" font-family="sans-serif" font-size="13" font-weight="700" fill="white">Tech Innovation</text>
+  <text x="600" y="188" font-family="sans-serif" font-size="10" fill="#BFDBFE">Solutions for modern</text>
+  <text x="600" y="202" font-family="sans-serif" font-size="10" fill="#BFDBFE">businesses</text>
+  <circle cx="762" cy="188" r="26" fill="#2563EB" fill-opacity="0.6"/>
+  <text x="762" y="196" font-family="sans-serif" font-size="20" text-anchor="middle">⚡</text>
+
+  <!-- Services section -->
+  <text x="594" y="248" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Our Services</text>
+
+  <!-- Service item rows -->
+  <rect x="588" y="256" width="212" height="44" rx="10" fill="#0F1830"/>
+  <rect x="596" y="264" width="28" height="28" rx="7" fill="#3B82F620"/>
+  <text x="610" y="282" font-family="sans-serif" font-size="13" text-anchor="middle">💻</text>
+  <text x="632" y="276" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Web Development</text>
+  <text x="632" y="290" font-family="sans-serif" font-size="9" fill="#71717A">React, Next.js &amp; more</text>
+  <text x="790" y="282" font-family="sans-serif" font-size="12" fill="#3B82F6" text-anchor="middle">›</text>
+
+  <rect x="588" y="306" width="212" height="44" rx="10" fill="#0F1830"/>
+  <rect x="596" y="314" width="28" height="28" rx="7" fill="#06B6D420"/>
+  <text x="610" y="332" font-family="sans-serif" font-size="13" text-anchor="middle">📱</text>
+  <text x="632" y="326" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Mobile Development</text>
+  <text x="632" y="340" font-family="sans-serif" font-size="9" fill="#71717A">Flutter &amp; React Native</text>
+  <text x="790" y="332" font-family="sans-serif" font-size="12" fill="#3B82F6" text-anchor="middle">›</text>
+
+  <rect x="588" y="356" width="212" height="44" rx="10" fill="#0F1830"/>
+  <rect x="596" y="364" width="28" height="28" rx="7" fill="#8B5CF620"/>
+  <text x="610" y="382" font-family="sans-serif" font-size="13" text-anchor="middle">🤖</text>
+  <text x="632" y="376" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">AI &amp; Automation</text>
+  <text x="632" y="390" font-family="sans-serif" font-size="9" fill="#71717A">ML &amp; process automation</text>
+  <text x="790" y="382" font-family="sans-serif" font-size="12" fill="#3B82F6" text-anchor="middle">›</text>
+
+  <rect x="588" y="406" width="212" height="44" rx="10" fill="#0F1830"/>
+  <rect x="596" y="414" width="28" height="28" rx="7" fill="#10B98120"/>
+  <text x="610" y="432" font-family="sans-serif" font-size="13" text-anchor="middle">☁️</text>
+  <text x="632" y="426" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Cloud Services</text>
+  <text x="632" y="440" font-family="sans-serif" font-size="9" fill="#71717A">AWS, GCP &amp; Azure</text>
+  <text x="790" y="432" font-family="sans-serif" font-size="12" fill="#3B82F6" text-anchor="middle">›</text>
+
+  <!-- CTA button in app -->
+  <rect x="596" y="460" width="196" height="36" rx="12" fill="url(#dt-blue)"/>
+  <text x="694" y="483" font-family="sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">Get Free Consultation</text>
+
+  <!-- Bottom nav -->
+  <rect x="580" y="498" width="228" height="24" fill="#0A0E1A"/>
+  <rect x="580" y="498" width="228" height="1" fill="#1A2540"/>
+  <text x="622" y="514" font-family="sans-serif" font-size="9" fill="#3B82F6" text-anchor="middle">🏠 Home</text>
+  <text x="667" y="514" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">🔧 Services</text>
+  <text x="714" y="514" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">📞 Contact</text>
+  <text x="760" y="514" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">👤 Profile</text>
+
+  <!-- Second phone - service detail -->
+  <rect x="848" y="90" width="232" height="450" rx="36" fill="#060A14" stroke="#1A2540" stroke-width="1.5" fill-opacity="0.95"/>
+  <rect x="860" y="110" width="208" height="414" rx="24" fill="#08101E"/>
+
+  <!-- Booking form screen -->
+  <text x="876" y="140" font-family="sans-serif" font-size="13" font-weight="700" fill="#FAFAFA">Book a Service</text>
+  <text x="876" y="156" font-family="sans-serif" font-size="9" fill="#71717A">Get expert tech help today</text>
+
+  <text x="876" y="182" font-family="sans-serif" font-size="10" fill="#A1A1AA">Service Type</text>
+  <rect x="876" y="190" width="184" height="32" rx="9" fill="#0F1830" stroke="#1A2540" stroke-width="1"/>
+  <text x="890" y="210" font-family="sans-serif" font-size="11" fill="#FAFAFA">Web Development</text>
+  <text x="1048" y="210" font-family="sans-serif" font-size="12" fill="#71717A" text-anchor="middle">▾</text>
+
+  <text x="876" y="238" font-family="sans-serif" font-size="10" fill="#A1A1AA">Project Budget</text>
+  <rect x="876" y="246" width="184" height="32" rx="9" fill="#0F1830" stroke="#1A2540" stroke-width="1"/>
+  <text x="890" y="266" font-family="sans-serif" font-size="11" fill="#FAFAFA">₹50,000 – ₹2,00,000</text>
+
+  <text x="876" y="294" font-family="sans-serif" font-size="10" fill="#A1A1AA">Timeline</text>
+  <rect x="876" y="302" width="184" height="32" rx="9" fill="#0F1830" stroke="#1A2540" stroke-width="1"/>
+  <text x="890" y="322" font-family="sans-serif" font-size="11" fill="#FAFAFA">3–6 weeks</text>
+
+  <text x="876" y="350" font-family="sans-serif" font-size="10" fill="#A1A1AA">Your Name</text>
+  <rect x="876" y="358" width="184" height="32" rx="9" fill="#3B82F620" stroke="#3B82F640" stroke-width="1"/>
+  <text x="890" y="378" font-family="sans-serif" font-size="11" fill="#FAFAFA">Rahul Sharma</text>
+
+  <text x="876" y="406" font-family="sans-serif" font-size="10" fill="#A1A1AA">Contact</text>
+  <rect x="876" y="414" width="184" height="32" rx="9" fill="#0F1830" stroke="#1A2540" stroke-width="1"/>
+  <text x="890" y="434" font-family="sans-serif" font-size="11" fill="#52525B">+91 98765 43210</text>
+
+  <!-- Submit button -->
+  <rect x="876" y="460" width="184" height="40" rx="12" fill="url(#dt-blue)"/>
+  <text x="968" y="484" font-family="sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">Submit Request</text>
+
+  <!-- Rating chips at top right -->
+  <rect x="1000" y="110" width="60" height="20" rx="8" fill="#F59E0B20"/>
+  <text x="1030" y="124" font-family="sans-serif" font-size="9" fill="#F59E0B" text-anchor="middle">4.7 ★</text>
+</svg>

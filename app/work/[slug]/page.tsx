@@ -18,9 +18,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const study = CASE_STUDIES.find((s) => s.slug === slug);
   if (!study) return {};
+  const title = `${study.title} — ${study.subtitle} | Teklin Case Study`;
+  const description = `${study.description} See how Teklin delivered ${study.metric} for ${study.title} in ${study.duration}.`;
   return {
-    title: `${study.title} — Case Study`,
-    description: study.description,
+    title,
+    description,
+    keywords: [`${study.title}`, `${study.industry} software development`, "software case study India", "Teklin"],
+    alternates: { canonical: `https://teklin.in/work/${slug}` },
+    openGraph: { title, description, url: `https://teklin.in/work/${slug}`, type: "article", images: [{ url: study.image }] },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

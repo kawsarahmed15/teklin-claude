@@ -7,9 +7,33 @@ import { SERVICES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Services — Full-Spectrum Software Development",
+  title: "Software Development Services India — Web, Mobile, AI, SaaS | Teklin",
   description:
-    "Custom software, web development, mobile apps, AI/ML, SaaS, cloud & DevOps, UI/UX design, enterprise software, and digital transformation.",
+    "Teklin offers full-spectrum software development services in India: custom software, web apps, mobile apps, AI/ML, SaaS, cloud & DevOps, UI/UX design, and enterprise software. Get a free quote.",
+  keywords: [
+    "software development services India",
+    "custom software development services",
+    "web development services India",
+    "mobile app development services India",
+    "AI ML services India",
+    "SaaS development services",
+    "cloud devops services India",
+    "UI UX design services India",
+    "enterprise software development",
+    "IT services India",
+  ],
+  alternates: { canonical: "https://teklin.in/services" },
+  openGraph: {
+    title: "Software Development Services India | Teklin",
+    description: "Custom software, web apps, mobile apps, AI/ML, SaaS, cloud & DevOps, UI/UX — full-spectrum software services across India.",
+    url: "https://teklin.in/services",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Development Services India | Teklin",
+    description: "Full-spectrum software services: custom software, web, mobile, AI/ML, SaaS, cloud & DevOps.",
+  },
 };
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {

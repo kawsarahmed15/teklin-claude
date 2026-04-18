@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="gt-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060E0A"/>
+      <stop offset="100%" stop-color="#040C08"/>
+    </linearGradient>
+    <linearGradient id="gt-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="gt-chart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gt-bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#gt-bg)"/>
+  <ellipse cx="600" cy="338" rx="500" ry="280" fill="#10B981" fill-opacity="0.04"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="210" height="675" fill="#060E0A"/>
+  <line x1="210" y1="0" x2="210" y2="675" stroke="#0F2A1A" stroke-width="1"/>
+
+  <!-- Logo -->
+  <rect x="20" y="20" width="38" height="38" rx="10" fill="url(#gt-green)"/>
+  <text x="39" y="44" font-family="sans-serif" font-size="14" font-weight="800" fill="white" text-anchor="middle">GT</text>
+  <text x="68" y="35" font-family="sans-serif" font-size="15" font-weight="700" fill="#FAFAFA">Gym Tym</text>
+  <text x="68" y="50" font-family="sans-serif" font-size="10" fill="#10B981">Your Fitness Journey</text>
+
+  <!-- Nav items -->
+  <rect x="12" y="72" width="186" height="34" rx="8" fill="#10B98120"/>
+  <text x="44" y="93" font-family="sans-serif" font-size="12" fill="#10B981" font-weight="500">🏠  Dashboard</text>
+  <text x="44" y="128" font-family="sans-serif" font-size="12" fill="#52525B">💪  Workouts</text>
+  <text x="44" y="158" font-family="sans-serif" font-size="12" fill="#52525B">📊  Progress</text>
+  <text x="44" y="188" font-family="sans-serif" font-size="12" fill="#52525B">🍎  Nutrition</text>
+  <text x="44" y="218" font-family="sans-serif" font-size="12" fill="#52525B">🏆  Challenges</text>
+  <text x="44" y="248" font-family="sans-serif" font-size="12" fill="#52525B">👥  Community</text>
+  <text x="44" y="278" font-family="sans-serif" font-size="12" fill="#52525B">👨‍🏫  Trainers</text>
+  <text x="44" y="308" font-family="sans-serif" font-size="12" fill="#52525B">⚙️  Settings</text>
+
+  <!-- User profile -->
+  <rect x="12" y="608" width="186" height="54" rx="8" fill="#0F2A1A"/>
+  <circle cx="40" cy="635" r="16" fill="#10B98130"/>
+  <text x="40" y="640" font-family="sans-serif" font-size="12" fill="#10B981" text-anchor="middle">💪</text>
+  <text x="64" y="628" font-family="sans-serif" font-size="11" fill="#FAFAFA">Rahul Sharma</text>
+  <text x="64" y="642" font-family="sans-serif" font-size="9" fill="#10B981">Pro Member</text>
+  <rect x="164" y="622" width="26" height="26" rx="6" fill="#0F2A1A" stroke="#1A4A2A" stroke-width="1"/>
+  <text x="177" y="639" font-family="sans-serif" font-size="10" fill="#71717A" text-anchor="middle">⋮</text>
+
+  <!-- Topbar -->
+  <rect x="210" y="0" width="990" height="54" fill="#060E0A"/>
+  <line x1="210" y1="54" x2="1200" y2="54" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="234" y="28" font-family="sans-serif" font-size="17" font-weight="700" fill="#FAFAFA">Fitness Dashboard</text>
+  <text x="234" y="44" font-family="sans-serif" font-size="10" fill="#52525B">Week 12 · Keep pushing! You're crushing it 💪</text>
+  <rect x="1090" y="13" width="90" height="28" rx="7" fill="url(#gt-green)"/>
+  <text x="1135" y="31" font-family="sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">Log Workout</text>
+
+  <!-- KPI Cards -->
+  <rect x="230" y="68" width="155" height="85" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="250" y="90" font-family="sans-serif" font-size="10" fill="#71717A">Weekly Streak</text>
+  <text x="250" y="118" font-family="sans-serif" font-size="26" font-weight="800" fill="#F59E0B">🔥 21</text>
+  <text x="250" y="136" font-family="sans-serif" font-size="9" fill="#F59E0B">days in a row</text>
+
+  <rect x="400" y="68" width="155" height="85" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="420" y="90" font-family="sans-serif" font-size="10" fill="#71717A">Calories Burned</text>
+  <text x="420" y="118" font-family="sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">4,820</text>
+  <text x="420" y="136" font-family="sans-serif" font-size="9" fill="#10B981">↑ +12% this week</text>
+
+  <rect x="570" y="68" width="155" height="85" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="590" y="90" font-family="sans-serif" font-size="10" fill="#71717A">Workouts Done</text>
+  <text x="590" y="118" font-family="sans-serif" font-size="26" font-weight="800" fill="#10B981">5/7</text>
+  <text x="590" y="136" font-family="sans-serif" font-size="9" fill="#71717A">this week</text>
+
+  <rect x="740" y="68" width="155" height="85" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="760" y="90" font-family="sans-serif" font-size="10" fill="#71717A">App Rating</text>
+  <text x="760" y="118" font-family="sans-serif" font-size="26" font-weight="800" fill="#F59E0B">4.8★</text>
+  <text x="760" y="136" font-family="sans-serif" font-size="9" fill="#71717A">5K+ active users</text>
+
+  <rect x="910" y="68" width="160" height="85" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="930" y="90" font-family="sans-serif" font-size="10" fill="#71717A">User Retention</text>
+  <text x="930" y="118" font-family="sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">+44%</text>
+  <text x="930" y="136" font-family="sans-serif" font-size="9" fill="#10B981">↑ vs last quarter</text>
+
+  <!-- Progress Chart -->
+  <rect x="230" y="168" width="490" height="200" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="250" y="192" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Weekly Progress — Calories</text>
+  <text x="640" y="192" font-family="sans-serif" font-size="10" fill="#52525B">Last 7 days</text>
+
+  <!-- Bar chart -->
+  <!-- Bars -->
+  <rect x="264" y="280" width="40" height="60" rx="4" fill="url(#gt-bar1)" fill-opacity="0.7"/>
+  <rect x="326" y="260" width="40" height="80" rx="4" fill="url(#gt-bar1)" fill-opacity="0.8"/>
+  <rect x="388" y="230" width="40" height="110" rx="4" fill="url(#gt-bar1)" fill-opacity="0.85"/>
+  <rect x="450" y="250" width="40" height="90" rx="4" fill="url(#gt-bar1)" fill-opacity="0.75"/>
+  <rect x="512" y="220" width="40" height="120" rx="4" fill="url(#gt-bar1)"/>
+  <rect x="574" y="268" width="40" height="72" rx="4" fill="url(#gt-bar1)" fill-opacity="0.5"/>
+  <rect x="636" y="240" width="40" height="100" rx="4" fill="url(#gt-bar1)" fill-opacity="0.9"/>
+
+  <!-- Bar labels -->
+  <text x="284" y="352" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Mon</text>
+  <text x="346" y="352" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Tue</text>
+  <text x="408" y="352" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Wed</text>
+  <text x="470" y="352" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Thu</text>
+  <text x="532" y="352" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="middle">Fri</text>
+  <text x="594" y="352" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Sat</text>
+  <text x="656" y="352" font-family="sans-serif" font-size="9" fill="#52525B" text-anchor="middle">Sun</text>
+
+  <!-- Gridlines -->
+  <line x1="254" y1="220" x2="690" y2="220" stroke="#0F2A1A" stroke-width="0.5"/>
+  <line x1="254" y1="250" x2="690" y2="250" stroke="#0F2A1A" stroke-width="0.5"/>
+  <line x1="254" y1="280" x2="690" y2="280" stroke="#0F2A1A" stroke-width="0.5"/>
+  <line x1="254" y1="310" x2="690" y2="310" stroke="#0F2A1A" stroke-width="0.5"/>
+  <line x1="254" y1="340" x2="690" y2="340" stroke="#0F2A1A" stroke-width="0.5"/>
+
+  <!-- Today's Workout -->
+  <rect x="230" y="382" width="490" height="258" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="250" y="406" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Today's Workout Plan</text>
+  <rect x="628" y="395" width="78" height="22" rx="6" fill="#10B98120"/>
+  <text x="667" y="410" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">Upper Body</text>
+
+  <!-- Exercise rows -->
+  <!-- Ex 1 -->
+  <rect x="246" y="415" width="458" height="44" rx="8" fill="#0F2A1A"/>
+  <rect x="256" y="423" width="28" height="28" rx="6" fill="#10B98120"/>
+  <text x="270" y="441" font-family="sans-serif" font-size="12" text-anchor="middle">🏋️</text>
+  <text x="294" y="434" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Bench Press</text>
+  <text x="294" y="448" font-family="sans-serif" font-size="9" fill="#71717A">4 sets × 10 reps · 80kg</text>
+  <rect x="620" y="425" width="74" height="22" rx="6" fill="#10B98120"/>
+  <text x="657" y="440" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">Completed ✓</text>
+
+  <!-- Ex 2 -->
+  <rect x="246" y="465" width="458" height="44" rx="8" fill="#0F2A1A"/>
+  <rect x="256" y="473" width="28" height="28" rx="6" fill="#10B98120"/>
+  <text x="270" y="491" font-family="sans-serif" font-size="12" text-anchor="middle">💪</text>
+  <text x="294" y="484" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Dumbbell Curls</text>
+  <text x="294" y="498" font-family="sans-serif" font-size="9" fill="#71717A">3 sets × 12 reps · 20kg</text>
+  <rect x="620" y="475" width="74" height="22" rx="6" fill="#10B98120"/>
+  <text x="657" y="490" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">Completed ✓</text>
+
+  <!-- Ex 3 -->
+  <rect x="246" y="515" width="458" height="44" rx="8" fill="#0F2A1A"/>
+  <rect x="256" y="523" width="28" height="28" rx="6" fill="#F59E0B20"/>
+  <text x="270" y="541" font-family="sans-serif" font-size="12" text-anchor="middle">🔄</text>
+  <text x="294" y="534" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA">Shoulder Press</text>
+  <text x="294" y="548" font-family="sans-serif" font-size="9" fill="#71717A">3 sets × 10 reps · 60kg</text>
+  <rect x="620" y="525" width="74" height="22" rx="6" fill="#F59E0B20"/>
+  <text x="657" y="540" font-family="sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle">In Progress</text>
+
+  <!-- Ex 4 -->
+  <rect x="246" y="565" width="458" height="44" rx="8" fill="#0A1A10"/>
+  <rect x="256" y="573" width="28" height="28" rx="6" fill="#1A2A1A"/>
+  <text x="270" y="591" font-family="sans-serif" font-size="12" text-anchor="middle">🧘</text>
+  <text x="294" y="584" font-family="sans-serif" font-size="11" font-weight="600" fill="#71717A">Core Stretching</text>
+  <text x="294" y="598" font-family="sans-serif" font-size="9" fill="#52525B">15 min cool-down</text>
+  <rect x="620" y="575" width="74" height="22" rx="6" fill="#1A2A1A"/>
+  <text x="657" y="590" font-family="sans-serif" font-size="10" fill="#52525B" text-anchor="middle">Upcoming</text>
+
+  <!-- Right panel: Trainer cards -->
+  <rect x="736" y="168" width="440" height="180" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="756" y="192" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Your Trainers</text>
+  <text x="1118" y="192" font-family="sans-serif" font-size="10" fill="#10B981">See all</text>
+
+  <!-- Trainer 1 -->
+  <rect x="752" y="202" width="128" height="130" rx="10" fill="#0F2A1A"/>
+  <circle cx="816" cy="238" r="26" fill="#10B98130"/>
+  <text x="816" y="245" font-family="sans-serif" font-size="22" text-anchor="middle">🏋️</text>
+  <text x="816" y="272" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA" text-anchor="middle">Arjun Singh</text>
+  <text x="816" y="285" font-family="sans-serif" font-size="9" fill="#71717A" text-anchor="middle">Strength Coach</text>
+  <rect x="780" y="292" width="72" height="20" rx="5" fill="url(#gt-green)"/>
+  <text x="816" y="306" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">Book Session</text>
+
+  <!-- Trainer 2 -->
+  <rect x="896" y="202" width="128" height="130" rx="10" fill="#0F2A1A"/>
+  <circle cx="960" cy="238" r="26" fill="#10B98130"/>
+  <text x="960" y="245" font-family="sans-serif" font-size="22" text-anchor="middle">🧘</text>
+  <text x="960" y="272" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA" text-anchor="middle">Priya Mehta</text>
+  <text x="960" y="285" font-family="sans-serif" font-size="9" fill="#71717A" text-anchor="middle">Yoga &amp; Wellness</text>
+  <rect x="924" y="292" width="72" height="20" rx="5" fill="url(#gt-green)"/>
+  <text x="960" y="306" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">Book Session</text>
+
+  <!-- Trainer 3 (partially visible) -->
+  <rect x="1040" y="202" width="120" height="130" rx="10" fill="#0F2A1A" clip-path="inset(0 -1px 0 0)"/>
+  <circle cx="1100" cy="238" r="26" fill="#F59E0B30"/>
+  <text x="1100" y="245" font-family="sans-serif" font-size="22" text-anchor="middle">🏃</text>
+  <text x="1100" y="272" font-family="sans-serif" font-size="11" font-weight="600" fill="#FAFAFA" text-anchor="middle">Vikram D.</text>
+  <text x="1100" y="285" font-family="sans-serif" font-size="9" fill="#71717A" text-anchor="middle">Cardio Expert</text>
+  <rect x="1064" y="292" width="72" height="20" rx="5" fill="url(#gt-green)"/>
+  <text x="1100" y="306" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">Book Session</text>
+
+  <!-- Community challenges -->
+  <rect x="736" y="362" width="440" height="278" rx="12" fill="#0A1A10" stroke="#0F2A1A" stroke-width="1"/>
+  <text x="756" y="386" font-family="sans-serif" font-size="13" font-weight="600" fill="#FAFAFA">Live Challenges</text>
+  <rect x="1108" y="375" width="54" height="20" rx="5" fill="#10B98120"/>
+  <text x="1135" y="389" font-family="sans-serif" font-size="10" fill="#10B981" text-anchor="middle">3 active</text>
+
+  <!-- Challenge 1 -->
+  <rect x="752" y="396" width="408" height="60" rx="10" fill="#0F2A1A"/>
+  <text x="770" y="417" font-family="sans-serif" font-size="12" font-weight="700" fill="#FAFAFA">🏃 30-Day Run Streak</text>
+  <text x="770" y="432" font-family="sans-serif" font-size="9" fill="#71717A">1,248 participants · Ends in 18 days</text>
+  <!-- Progress bar -->
+  <rect x="770" y="440" width="280" height="6" rx="3" fill="#1A2A1A"/>
+  <rect x="770" y="440" width="196" height="6" rx="3" fill="url(#gt-green)"/>
+  <text x="1070" y="448" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="end">70% done</text>
+
+  <!-- Challenge 2 -->
+  <rect x="752" y="464" width="408" height="60" rx="10" fill="#0F2A1A"/>
+  <text x="770" y="485" font-family="sans-serif" font-size="12" font-weight="700" fill="#FAFAFA">💪 100-Rep Daily Challenge</text>
+  <text x="770" y="500" font-family="sans-serif" font-size="9" fill="#71717A">876 participants · Ends in 5 days</text>
+  <rect x="770" y="508" width="280" height="6" rx="3" fill="#1A2A1A"/>
+  <rect x="770" y="508" width="238" height="6" rx="3" fill="url(#gt-green)"/>
+  <text x="1070" y="516" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="end">85% done</text>
+
+  <!-- Challenge 3 -->
+  <rect x="752" y="532" width="408" height="60" rx="10" fill="#0F2A1A"/>
+  <text x="770" y="553" font-family="sans-serif" font-size="12" font-weight="700" fill="#FAFAFA">🥗 Nutrition Week Challenge</text>
+  <text x="770" y="568" font-family="sans-serif" font-size="9" fill="#71717A">2,104 participants · Ends in 2 days</text>
+  <rect x="770" y="576" width="280" height="6" rx="3" fill="#1A2A1A"/>
+  <rect x="770" y="576" width="260" height="6" rx="3" fill="url(#gt-green)"/>
+  <text x="1070" y="584" font-family="sans-serif" font-size="9" fill="#10B981" text-anchor="end">93% done</text>
+
+  <!-- Teklin badge -->
+  <text x="756" y="622" font-family="sans-serif" font-size="9" fill="#52525B">Built by Teklin · gymtym.in</text>
+</svg>

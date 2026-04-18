@@ -19,9 +19,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return {};
+  const title = `${service.title} Company India | Teklin`;
+  const description = `${service.description} Teklin delivers expert ${service.title.toLowerCase()} services across India. Get a free consultation.`;
   return {
-    title: `${service.title} Services`,
-    description: service.description,
+    title,
+    description,
+    keywords: [
+      `${service.title.toLowerCase()} India`,
+      `${service.title.toLowerCase()} company India`,
+      `${service.shortTitle.toLowerCase()} services India`,
+      "software development company India",
+      "Teklin",
+    ],
+    alternates: { canonical: `https://teklin.in/services/${slug}` },
+    openGraph: { title, description, url: `https://teklin.in/services/${slug}`, type: "website" },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

@@ -8,9 +8,26 @@ import { BLOG_POSTS } from "@/lib/constants";
 import { formatDate } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Insights — Engineering, Design & Product",
+  title: "Insights — Software Engineering, AI, Design & Product Blog | Teklin",
   description:
-    "Thoughts from the Teklin team on engineering, design, AI/ML, DevOps, and building great software products.",
+    "Expert articles from Teklin's engineering team on React, Next.js, AI/ML, DevOps, SaaS architecture, UI/UX design, and building great digital products. Stay ahead of the curve.",
+  keywords: [
+    "software engineering blog India",
+    "Next.js tutorials",
+    "AI ML development blog",
+    "DevOps best practices",
+    "SaaS development insights",
+    "UI UX design articles",
+    "Teklin blog",
+    "software development insights India",
+  ],
+  alternates: { canonical: "https://teklin.in/insights" },
+  openGraph: {
+    title: "Insights — Software Engineering & Product Blog | Teklin",
+    description: "Expert articles on React, Next.js, AI/ML, DevOps, SaaS architecture & design from Teklin's engineering team.",
+    url: "https://teklin.in/insights",
+    type: "website",
+  },
 };
 
 const CATEGORIES = ["All", "Engineering", "Design", "AI/ML", "DevOps", "Product", "Culture"];
