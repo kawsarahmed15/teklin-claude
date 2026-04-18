@@ -18,11 +18,12 @@ function calculateHours(
   return base.hours + featureHours;
 }
 
-function deriveTeamSize(totalValue: number) {
-  if (totalValue > 50000) return 6;
-  if (totalValue > 20000) return 4;
-  if (totalValue > 10000) return 3;
-  return 2;
+/** Uses INR midpoint for Indian market team sizing */
+function deriveTeamSize(midpointINR: number) {
+  if (midpointINR >= 500_000) return 6; // ₹5L+
+  if (midpointINR >= 200_000) return 4; // ₹2L–₹5L
+  if (midpointINR >= 80_000)  return 3; // ₹80K–₹2L
+  return 2;                              // < ₹80K
 }
 
 function calculateBreakdown(low: number, high: number, breakdown: Record<string, number>) {
@@ -38,73 +39,79 @@ export function calculateEstimate(input: EstimateInput): EstimateResult {
   const { projectType, selectedFeatures, designLevel, complexity, timeline, platform } = input;
   const config = pricingConfig;
 
-  // 1. Base cost
+  // 1. Base cost (USD)
   const base = config.baseCosts[projectType];
   const baseMidpoint = (base.low + base.high) / 2;
 
-  // 2. Sum selected features
+  // 2. Sum feature add-ons
   const featureTotal = selectedFeatures.reduce((sum, featureId) => {
     const feature = config.features.find((f) => f.id === featureId);
     if (!feature) return sum;
-    const featureMidpoint = (feature.price.low + feature.price.high) / 2;
-    return sum + featureMidpoint;
+    return sum + (feature.price.low + feature.price.high) / 2;
   }, 0);
 
-  // 3. Apply design multiplier
-  const designFactor = config.multipliers.design.options.find((o) => o.id === designLevel)?.factor ?? 1.0;
+  // 3. Design multiplier
+  const designFactor =
+    config.multipliers.design.options.find((o) => o.id === designLevel)?.factor ?? 1.0;
 
-  // 4. Subtotal before multipliers
+  // 4. Subtotal
   const subtotal = (baseMidpoint + featureTotal) * designFactor;
 
-  // 5. Apply complexity multiplier
-  const complexityFactor = config.multipliers.complexity.options.find((o) => o.id === complexity)?.factor ?? 1.0;
+  // 5. Complexity multiplier
+  const complexityFactor =
+    config.multipliers.complexity.options.find((o) => o.id === complexity)?.factor ?? 1.0;
 
-  // 6. Apply timeline multiplier
-  const timelineFactor = config.multipliers.timeline.options.find((o) => o.id === timeline)?.factor ?? 1.0;
+  // 6. Timeline multiplier
+  const timelineFactor =
+    config.multipliers.timeline.options.find((o) => o.id === timeline)?.factor ?? 1.0;
 
-  // 7. Apply platform multiplier (mobile only)
+  // 7. Platform multiplier (mobile-app only)
   let platformFactor = 1.0;
   if (projectType === "mobile-app" && platform) {
-    platformFactor = config.multipliers.platform.options.find((o) => o.id === platform)?.factor ?? 1.0;
+    platformFactor =
+      config.multipliers.platform.options.find((o) => o.id === platform)?.factor ?? 1.0;
   }
 
-  // 8. Final total
+  // 8. Final total (USD midpoint)
   const total = subtotal * complexityFactor * timelineFactor * platformFactor;
 
-  // 9. Apply range spread
+  // 9. Spread → low / high (USD)
   const spread = config.rangeSpread;
-  const low = roundTo(total * (1 - spread), config.roundingUSD);
-  const high = roundTo(total * (1 + spread), config.roundingUSD);
+  const lowUSD  = roundTo(total * (1 - spread), config.roundingUSD);
+  const highUSD = roundTo(total * (1 + spread), config.roundingUSD);
 
-  // 10. Calculate hours
+  // 10. INR conversion
+  const usdToInr = USD_TO_INR_RATE;
+  const lowINR  = roundTo(lowUSD  * usdToInr, config.roundingINR);
+  const highINR = roundTo(highUSD * usdToInr, config.roundingINR);
+  const midINR  = roundTo(((lowINR + highINR) / 2), config.roundingINR);
+
+  // 11. Team size based on INR midpoint
+  const teamSize = deriveTeamSize(midINR);
+
+  // 12. Total hours
   const totalHours = calculateHours(base, selectedFeatures, config);
 
-  // 11. Timeline in weeks
-  const teamSize = deriveTeamSize(total);
-  // 80% utilization assumes 32 hours per team member per week
-  const weeksLow = Math.ceil((totalHours * 0.85) / (teamSize * 32));
-  const weeksHigh = Math.ceil((totalHours * 1.15) / (teamSize * 32));
+  // 13. Timeline in weeks (40 hrs/week/developer at 80 % utilisation)
+  const effectiveHrsPerWeek = teamSize * 40 * 0.80;
+  const weeksLow  = Math.max(1, Math.ceil((totalHours * 0.85) / effectiveHrsPerWeek));
+  const weeksHigh = Math.max(1, Math.ceil((totalHours * 1.15) / effectiveHrsPerWeek));
 
-  // 12. INR conversion
-  const usdToInr = USD_TO_INR_RATE;
-  const lowINR = roundTo(low * usdToInr, config.roundingINR);
-  const highINR = roundTo(high * usdToInr, config.roundingINR);
-
-  // 13. Annual maintenance
-  const maintenanceLow = roundTo(low * config.annualMaintenancePercent, config.roundingUSD);
-  const maintenanceHigh = roundTo(high * config.annualMaintenancePercent, config.roundingUSD);
+  // 14. Annual maintenance (INR)
+  const maintLowINR  = roundTo(lowINR  * config.annualMaintenancePercent, config.roundingINR);
+  const maintHighINR = roundTo(highINR * config.annualMaintenancePercent, config.roundingINR);
 
   return {
     pricingVersion: config.version,
     projectType,
-    priceUSD: { low, high, midpoint: roundTo((low + high) / 2, config.roundingUSD) },
-    priceINR: { low: lowINR, high: highINR, midpoint: roundTo((lowINR + highINR) / 2, config.roundingINR) },
+    priceUSD: { low: lowUSD,  high: highUSD,  midpoint: roundTo((lowUSD  + highUSD)  / 2, config.roundingUSD)  },
+    priceINR: { low: lowINR,  high: highINR,  midpoint: midINR },
     timeline: { weeksLow, weeksHigh },
     teamSize,
     totalHours,
     selectedFeatures,
     multipliers: { designLevel, complexity, timeline, platform },
-    breakdown: calculateBreakdown(low, high, config.costBreakdown),
-    maintenance: { low: maintenanceLow, high: maintenanceHigh },
+    breakdown: calculateBreakdown(lowINR, highINR, config.costBreakdown), // breakdown in INR
+    maintenance: { low: maintLowINR, high: maintHighINR },
   };
 }

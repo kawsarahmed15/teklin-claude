@@ -14,15 +14,16 @@ interface EstimatorState {
   direction: number;
 
   projectType: ProjectType | null;
-
   selectedFeatures: string[];
 
   designLevel: DesignLevel;
   complexity: ComplexityLevel;
   timeline: TimelineLevel;
   platform: PlatformLevel | null;
-  startDate: string;
-  currentStage: string;
+
+  /** Freeform project description / requirements text */
+  requirementText: string;
+  requirementFileName: string;
 
   contactInfo: {
     name: string;
@@ -35,6 +36,8 @@ interface EstimatorState {
   consentMarketing: boolean;
 
   estimateResult: EstimateResult | null;
+  aiInsights: string[];
+  aiSummary: string;
 
   setProjectType: (type: ProjectType) => void;
   setFeatures: (features: string[]) => void;
@@ -42,6 +45,9 @@ interface EstimatorState {
   setMultiplier: (key: string, value: string) => void;
   setContactField: (field: string, value: string) => void;
   setConsent: (type: "functional" | "marketing", value: boolean) => void;
+  setRequirementText: (text: string) => void;
+  setRequirementFileName: (name: string) => void;
+  setAiInsights: (insights: string[], summary: string) => void;
   goToStep: (step: number) => void;
   nextStep: () => void;
   prevStep: () => void;
@@ -49,51 +55,46 @@ interface EstimatorState {
   reset: () => void;
 }
 
+const DEFAULT_STATE = {
+  currentStep: 1,
+  direction: 1,
+  projectType: null as ProjectType | null,
+  selectedFeatures: [] as string[],
+  designLevel: "template" as DesignLevel,
+  complexity: "simple" as ComplexityLevel,
+  timeline: "standard" as TimelineLevel,
+  platform: null as PlatformLevel | null,
+  requirementText: "",
+  requirementFileName: "",
+  contactInfo: { name: "", email: "", phone: "", company: "", source: "Other" },
+  consentFunctional: false,
+  consentMarketing: false,
+  estimateResult: null as EstimateResult | null,
+  aiInsights: [] as string[],
+  aiSummary: "",
+};
+
 export const useEstimatorStore = create<EstimatorState>()(
   persist(
     (set) => ({
-      currentStep: 1,
-      direction: 1,
-
-      projectType: null,
-      selectedFeatures: [],
-
-      designLevel: "template",
-      complexity: "simple",
-      timeline: "standard",
-      platform: null,
-      startDate: "1-3-months",
-      currentStage: "Just an idea",
-
-      contactInfo: {
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        source: "Other",
-      },
-      consentFunctional: false,
-      consentMarketing: false,
-
-      estimateResult: null,
+      ...DEFAULT_STATE,
 
       setProjectType: (type) => set({ projectType: type }),
-      setFeatures: (features: string[]) => set({ selectedFeatures: features }),
+      setFeatures: (features) => set({ selectedFeatures: features }),
       toggleFeature: (featureId) =>
         set((state) => ({
           selectedFeatures: state.selectedFeatures.includes(featureId)
             ? state.selectedFeatures.filter((f) => f !== featureId)
             : [...state.selectedFeatures, featureId],
         })),
-      setMultiplier: (key, value) => set({ [key]: value }),
+      setMultiplier: (key, value) => set({ [key]: value } as Partial<EstimatorState>),
       setContactField: (field, value) =>
-        set((state) => ({
-          contactInfo: { ...state.contactInfo, [field]: value },
-        })),
+        set((state) => ({ contactInfo: { ...state.contactInfo, [field]: value } })),
       setConsent: (type, value) =>
-        set((state) => ({
-          [type === "functional" ? "consentFunctional" : "consentMarketing"]: value,
-        })),
+        set({ [type === "functional" ? "consentFunctional" : "consentMarketing"]: value }),
+      setRequirementText: (text) => set({ requirementText: text }),
+      setRequirementFileName: (name) => set({ requirementFileName: name }),
+      setAiInsights: (insights, summary) => set({ aiInsights: insights, aiSummary: summary }),
       goToStep: (step) =>
         set((state) => ({
           direction: step > state.currentStep ? 1 : -1,
@@ -104,19 +105,11 @@ export const useEstimatorStore = create<EstimatorState>()(
       prevStep: () =>
         set((state) => ({ direction: -1, currentStep: Math.max(state.currentStep - 1, 1) })),
       setEstimateResult: (result) => set({ estimateResult: result }),
-      reset: () =>
-        set({
-          currentStep: 1,
-          direction: 1,
-          projectType: null,
-          selectedFeatures: [],
-          estimateResult: null,
-        }),
+      reset: () => set(DEFAULT_STATE),
     }),
     {
-      name: "teklin-estimator-v1",
+      name: "teklin-estimator-v2",
       partialize: (state) => ({
-        // persisting important state
         currentStep: state.currentStep,
         projectType: state.projectType,
         selectedFeatures: state.selectedFeatures,
@@ -124,6 +117,7 @@ export const useEstimatorStore = create<EstimatorState>()(
         complexity: state.complexity,
         timeline: state.timeline,
         platform: state.platform,
+        requirementText: state.requirementText,
         contactInfo: state.contactInfo,
       }),
     }
